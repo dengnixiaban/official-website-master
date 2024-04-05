@@ -43,8 +43,9 @@ import GoTop from './components/GoTop'
 Vue.component(GoTop.name,GoTop)
 
 Vue.config.productionTip = false
-
-
+import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant);
 router.beforeEach((to, from, next) => {
     if(to.meta.title){
       document.title = to.meta.title

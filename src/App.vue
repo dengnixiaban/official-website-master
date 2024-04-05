@@ -22,7 +22,7 @@ export default {
    this.isMob=navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
    if(this.$route.path==='/'||this.$route.path==='/moble'){
     if(this.isMob){
-      this.$router.replace('/moble')
+      this.$router.replace('/moble/cell-mall')
     }else{
       this.$router.replace('/')
     }

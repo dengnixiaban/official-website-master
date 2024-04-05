@@ -22,7 +22,33 @@ export default new Router({
       component: resolve => require(['@/view/MobleHome'], resolve),
       meta: {
         title: '广州中检仪达实验器材有限公司'
-      }
+      },
+      children: [
+        {
+          path: 'cell-mall',
+          name: 'cell-mall',
+          component: resolve => require(['@/view/CellMall'], resolve),
+          meta: {
+            title: '广州中检仪达实验器材有限公司'
+          }
+        },
+        {
+          path: 'cell-record',
+          name: 'cell-record',
+          component: resolve => require(['@/view/CellRecord'], resolve),
+          meta: {
+            title: '广州中检仪达实验器材有限公司'
+          }
+        },
+        {
+          path: 'cell-mine',
+          name: 'cell-mine',
+          component: resolve => require(['@/view/CellMine'], resolve),
+          meta: {
+            title: '广州中检仪达实验器材有限公司'
+          }
+        },
+      ]
     },
     {
       path: '/environment',
