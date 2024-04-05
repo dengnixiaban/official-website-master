@@ -3,24 +3,28 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
-  routes: [{
-    path: '*',
-    redirect: '/'
-  }, {
-    path: '/',
-    name: 'PageView',
-    component: resolve => require(['@/view/PageView'], resolve),
-    children: [{
+  routes: [
+    {
       path: '/',
       redirect: '/home'
-    }, {
+    },
+    {
       path: '/home',
       name: 'home',
       component: resolve => require(['@/view/HomePage'], resolve),
       meta: {
         title: '广州中检仪达实验器材有限公司'
       }
-    }, {
+    },
+    {
+      path: '/moble',
+      name: 'moble',
+      component: resolve => require(['@/view/MobleHome'], resolve),
+      meta: {
+        title: '广州中检仪达实验器材有限公司'
+      }
+    },
+    {
       path: '/environment',
       name: 'environment',
       component: resolve => require(['@/view/Environment'], resolve),
@@ -52,7 +56,7 @@ export default new Router({
         title: '广州中检仪达实验器材有限公司'
       },
     },
-   {
+    {
       path: '/companyintroduction',
       name: 'companyintroduction',
       component: resolve => require(['@/view/CompanyIntroduction'], resolve),
@@ -67,6 +71,6 @@ export default new Router({
         title: '广州中检仪达实验器材有限公司'
       }
     }
-    ]
-  }]
+  ]
+
 })
