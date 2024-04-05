@@ -16,9 +16,6 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
-  externals: {
-    "BMap": "BMap" 
-  }, 
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",

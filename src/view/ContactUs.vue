@@ -35,8 +35,6 @@
   </div>
 </template>
 <script>
-
-import BMap from "BMap";
 export default {
   name: "ContactUs",
   data() {
