@@ -6,11 +6,6 @@ import App from './App'
 /* 路由 */
 import router from './router'
 
-/* axios */
-import axios from './api'
-import api from './api/api'
-Vue.prototype.http = axios;
-Vue.prototype.api = api;
 
 /* swiper */
 import 'swiper/dist/css/swiper.min.css';

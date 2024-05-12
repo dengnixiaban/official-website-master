@@ -10,20 +10,30 @@
 import tabber from "../components/Tabbar.vue";
 export default {
   name: "HomePage",
-  components:{
+  components: {
     tabber
   },
   data() {
     return {};
   },
-  mounted() {}
+  created(){
+    this.getList()
+  },
+  mounted() {},
+  methods: {
+    getList() {
+      fetch("api/prize/list")
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(error => console.error(error));
+    }
+  }
 };
 </script>
 <style scoped>
-  #container{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-  }
-
+#container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
 </style>
