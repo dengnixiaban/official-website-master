@@ -22,7 +22,7 @@ export default {
   mounted() {},
   methods: {
     getList() {
-      fetch("api/prize/list")
+      fetch("/api/prize/list?pageNum=1&&pageSize=10")
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(error => console.error(error));
