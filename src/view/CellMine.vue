@@ -3,10 +3,10 @@
         <div class="userMine">
             <div style="padding-top: 56px;font-size: 16px;font-weight: 700;text-align: center;color: #FCFCFC;">个人中心</div>
             <div style="padding-top:40px;padding-left:34px;">
-                <a style="font-size: 14px;color:#FCFCFC">请登录</a>
-                <div style="font-size: 16px;color:#FCFCFC">阿伟</div>
-                <div style="font-size: 12px;color:#FCFCFC">账号:515133135</div>
 
+                <div v-if="logined" style="font-size: 16px;color:#FCFCFC">{{ user.name || '' }}</div>
+                <div v-if="logined" style="font-size: 12px;color:#FCFCFC">{{ user.userName || '' }}</div>
+                <a v-else style="font-size: 14px;color:#FCFCFC" @click="show = true">请登录</a>
             </div>
             <div style="width: 100%;display: flex;justify-content: center;position: absolute;bottom:15px;">
                 <div
@@ -15,25 +15,34 @@
                     <div style="display:flex;height:24px;padding-left: 14PX;align-items: center;">
                         <img src="../assets/img/mall-icon.png" style="width: 24px;height: 24px;">
                         <div style="font-size: 14px;color: #FEFFFF;">可用积分:</div>
-                        <div style="color:cadetblue ;padding-left: 5px;font-size: 16px;font-weight: 700;">999</div>
+                        <div style="color:cadetblue ;padding-left: 5px;font-size: 16px;font-weight: 700;">{{ user.points || 0}}</div>
                     </div>
                     <div style="font-size: 16px;color:#FCFCFC">
-                        公司名称
+                        {{ user.company||'' }}
                     </div>
                 </div>
 
             </div>
             <div style="width:100vw ;height:377px;padding:12px;margin-top: 90px;">
                 <div class="info">
-                    <div style="font-size:16px ;color:#000000;padding-left: 14px;">收货信息</div>
-                    <div style="font-size:14px ;color:#000000;padding-top: 16px;padding-left: 14px;">收货姓名：</div>
-                    <van-field v-model="info.userName" placeholder="请输入收货姓名" />
-                    <div style="font-size:14px ;color:#000000;padding-top: 16px;padding-left: 14px;">收货电话：</div>
-                    <van-field v-model="info.userName" placeholder="请输入收货电话" />
-                    <div style="font-size:14px ;color:#000000;padding-top: 16px;padding-left: 14px;">收货地址：</div>
-                    <van-field v-model="info.userName" placeholder="请输入收货地址" />
+                    <div style="font-size:16px ;color:#000000;padding-left: 4px;">收货信息</div>
+                    <div style="font-size:14px ;color:#000000;padding-top: 16px;padding-left: 4px;">收货姓名：</div>
+                    <div class="inputItem">
+                        <input v-model="user.deliveryName" placeholder="请输入收货姓名"
+                            style="background: transparent;border: none;" />
+                    </div>
+                    <div style="font-size:14px ;color:#000000;padding-top: 16px;padding-left: 4px;">收货电话：</div>
+                    <div class="inputItem">
+                        <input v-model="user.deliveryPhone" placeholder="请输入收货电话"
+                            style="background: transparent;border: none;" />
+                    </div>
+                    <div style="font-size:14px ;color:#000000;padding-top: 16px;padding-left: 4px;">收货地址：</div>
+                    <div class="inputItem">
+                        <input v-model="user.deliveryAddress" placeholder="请输入收货地址"
+                            style="background: transparent;border: none;" />
+                    </div>
                     <div style="width: 100%;display:flex;justify-content: center;padding-top: 31px;">
-                        <div class="info-btn">
+                        <div @click="changeInfo" class="info-btn">
                             <div>确认信息</div>
                         </div>
                     </div>
@@ -54,19 +63,20 @@
                 </div>
                 <div style="width: 100%;display:flex;justify-content:center;padding-top: 20px;">
                     <div class="inputItem">
-                        <input v-model="info.userName" placeholder="请输入用户名" style="background: transparent;border: none;" />
+                        <input v-model="loginFrom.userName" placeholder="请输入用户名"
+                            style="background: transparent;border: none;" />
                     </div>
 
                 </div>
                 <div style="width: 100%;display:flex;justify-content:center;padding-top: 20px;">
 
                     <div class="inputItem">
-                        <input v-model="info.userName" placeholder="请输入密码" type="password"
+                        <input v-model="loginFrom.password" placeholder="请输入密码" type="password"
                             style="background: transparent;border: none;" />
                     </div>
                 </div>
                 <div style="padding-top:48px;width:100%;display:flex;justify-content:center">
-                    <div class="login-btn">
+                    <div @click="login" class="login-btn">
                         <div>登录</div>
                     </div>
                 </div>
@@ -75,21 +85,78 @@
     </div>
 </template>
 <script>
-
+import { Toast } from 'vant';
 export default {
     name: 'cellMine',
     data() {
         return {
             info: {
-
+                deliveryName:'',
+                deliveryPhone:'',
+                deliveryAddress:''
             },
-            show: true,
-            active: 0
+            show: false,
+            active: 0,
+            logined: false,
+            user: {},
+            loginFrom: {}
+        }
+    },
+    created() {
+        
+        let user = localStorage.getItem('userInfo')
+        if (user) {
+            this.logined = true
+            this.user = JSON.parse(user)
+            this.info.id=this.user.id
+            this.info.deliveryName=this.user.deliveryName
+            this.info.deliveryPhone=this.user.deliveryPhone
+            this.info.deliveryAddress=this.user.deliveryAddresss
+            
         }
     },
     mounted() {
 
     },
+    methods: {
+        login() {
+            const queryString = new URLSearchParams(this.loginFrom).toString();
+            // 发送POST请求
+            fetch('/api/login/point-login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: queryString
+            })
+                .then(response => response.json())
+                .then(data => {
+                    this.user = data.data
+                    console.log(this.user);
+                    localStorage.setItem('userInfo',JSON.stringify( data.data))
+                    this.logined=true
+                    this.show=false
+                })
+                .catch(error => console.error('Error:', error));
+        },
+        changeInfo(){
+            
+            // 发送POST请求
+            fetch('/api/points-owner/update', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(this.info)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    localStorage.setItem('userInfo',JSON.stringify( this.user ))
+                    Toast.success('修改成功！');
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    }
 }
 </script>
 <style scoped>
@@ -151,5 +218,6 @@ export default {
     font-size: 20px;
     color: #FCFCFC;
     border-radius: 100px;
-}</style>
+}
+</style>
 

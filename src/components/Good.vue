@@ -1,16 +1,15 @@
 <template>
     <div class="good">
-
-        <img class="goodImg" src="https://img0.baidu.com/it/u=775932288,286321380&fm=253&fmt=auto&app=138&f=PNG?w=767&h=393"
+        <img class="goodImg" :src="good.imageUrl"
             alt="">
         <div style="padding-left:12px;font-size: 14px;font-weight: 700;padding-top: 4px;">
-            苹果电脑
+            {{ good.name }}
         </div>
         <div style="display:flex;font-size: 12px;color: #2c2c2c;padding-top: 4px;padding-left: 12px;">
-            <div>16g / 库存： 100</div>
+            <div>{{ good.size }} / 库存： {{ good.number }}</div>
         </div>
         <div class="buy">
-            <div style="color:#DF1331;font-size: 12px;font-weight: 700;">10000 积分</div>
+            <div style="color:#DF1331;font-size: 12px;font-weight: 700;">{{ good.needPoints }} 积分</div>
             <button class="buyBtn">立即兑换</button>
         </div>
     </div>
@@ -18,8 +17,15 @@
 <script>
 export default {
     name: "good",
+    props:{
+        'good':{
+            type: Object,
+        }
+    },
     data() {
-        return {};
+        return {
+        
+        };
     }
 };
 </script>
@@ -29,6 +35,8 @@ export default {
     width: 175px;
     border-radius: 16px;
     background-color: #ffffff;
+    margin-top: 12px;
+    box-shadow: 0px 4px 4px 0px #00000014;
 }
 
 .goodImg {

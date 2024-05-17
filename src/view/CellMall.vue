@@ -10,7 +10,7 @@
                     <img src="../assets/img/mall-icon.png" style="width: 24px;height: 24px;">
                     <div style="display:flex;height:24px;padding-left: 14PX;align-items: center;">
                         <div style="font-size: 14px;">可用积分:</div>
-                        <div style="color:cadetblue ;padding-left: 5px;font-size: 16px;font-weight: 700;">999</div>
+                        <div style="color:cadetblue ;padding-left: 5px;font-size: 16px;font-weight: 700;">{{ user.points || 0 }}</div>
                     </div>
 
                 </div>
@@ -20,9 +20,9 @@
         <van-tabs v-model="active" color="green">
             <van-tab :title="item" v-for="(item, index) in typeList" :key="index" />
         </van-tabs>
-        <keep-live>
-            <Elect></Elect>
-        </keep-live>
+      
+        <Elect></Elect>
+      
         
         <van-dialog v-model="show" :show-confirm-button="false">
                 <div style="width: 322px;height:316px;border-redius:12px;margin-top: -1px;position: relative;">
@@ -67,12 +67,26 @@ export default {
         return {
             active: 0,
             typeList: ['数码家电', '家居用品', '办公用品', '环境耗材'],
-            show: true
+            show: true,
+            user:{},
+            goodsList:[]
         }
+    },
+    created() {
+        
+        let user = localStorage.getItem('userInfo')
+        if (user) {
+            this.logined = true
+            this.user = JSON.parse(user)      
+        }
+        
     },
     mounted() {
 
     },
+    methods: {
+      
+    }
 }
 </script>
 <style scoped>

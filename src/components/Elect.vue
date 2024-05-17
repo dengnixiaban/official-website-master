@@ -1,9 +1,9 @@
 <template>
     <div class="content">
 
-        <Good></Good>
-        <Good></Good>
-       
+        <Good v-for="(item, index) in goodsList" :key="index" :good="item"></Good>
+
+
     </div>
 </template>
 <script>
@@ -15,8 +15,23 @@ export default {
     },
     data() {
         return {
-            show:true
+            show: true,
+            goodsList: []
         };
+    },
+    created(){
+        this.getList()
+    },
+    methods: {
+        getList() {
+            
+            fetch("/api/prize/list?pageNum=1&&pageSize=10&type=数码家电")
+                .then(response => response.json())
+                .then(data => {
+                    this.goodsList = data.data.list
+                })
+                .catch(error => console.error(error));
+        }
     }
 };
 </script>
