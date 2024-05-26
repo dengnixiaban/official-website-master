@@ -158,8 +158,8 @@ export default {
     created() {
 
         let user = sessionStorage.getItem('userInfo')
-        console.log(user);
-        if (JSON.stringify(user) !== '{}') {
+        
+        if (user) {
             this.logined = true
             this.user = JSON.parse(user)
             this.info.deliveryName = this.user.deliveryName
