@@ -1,7 +1,7 @@
 <template>
     <div class="content">
 
-        <Good v-for="(item, index) in goodsList" :key="index" :good="item"></Good>
+        <Good @buy="buy" v-for="(item, index) in goodsList" :key="index" :good="item"></Good>
 
 
     </div>
@@ -10,6 +10,9 @@
 import Good from './Good.vue'
 export default {
     name: "elect",
+    props:{
+        type:''
+    },
     components: {
         Good
     },
@@ -25,12 +28,21 @@ export default {
     methods: {
         getList() {
             
-            fetch("/api/prize/list?pageNum=1&&pageSize=10&type=数码家电")
+            fetch("/api/prize/list?pageNum=1&&pageSize=10&&type="+this.type)
                 .then(response => response.json())
                 .then(data => {
                     this.goodsList = data.data.list
                 })
                 .catch(error => console.error(error));
+        },
+        buy(data){
+            
+            this.$emit('buyGood',data)
+        }
+    },
+    watch:{
+        type(){
+            this.getList()
         }
     }
 };

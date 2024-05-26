@@ -10,7 +10,7 @@
                     <img src="../assets/img/mall-icon.png" style="width: 24px;height: 24px;">
                     <div style="display:flex;height:24px;padding-left: 14PX;align-items: center;">
                         <div style="font-size: 14px;">可用积分:</div>
-                        <div style="color:cadetblue ;padding-left: 5px;font-size: 16px;font-weight: 700;">{{ user.points || 0 }}</div>
+                        <div style="color:cadetblue ;padding-left: 5px;font-size: 16px;font-weight: 700;">{{user?user.points:0 }}</div>
                     </div>
 
                 </div>
@@ -21,7 +21,7 @@
             <van-tab :title="item" v-for="(item, index) in typeList" :key="index" />
         </van-tabs>
       
-        <Elect></Elect>
+        <Elect @buyGood="buyGood" :type="type"></Elect>
       
         
         <van-dialog v-model="show" :show-confirm-button="false">
@@ -36,16 +36,16 @@
                             style="padding-top: 31px;padding-left:26px ;font-size: 16px;color: #1B1B1B;width: 300px;height: 32px;">
                             您将换购业务信息如下:</div>
                         <div
-                            style="padding-top: 22px;padding-left:26px ;font-size: 14px;color: #424242;width: 300px;height: 32px;">
-                            换购商品：白色人字拖（42码）</div>
+                            style="padding-top: 42px;padding-left:26px ;font-size: 14px;color: #424242;width: 300px;height: 32px;">
+                            换购商品：{{ goodsInfo.name || ''}} {{ goodsInfo.size || ''}}</div>
                         <div
-                            style="padding-top: 12px;padding-left:26px ;font-size: 14px;color: #424242;width: 200px;height: 32px;">
-                            兑换积分：3246积分</div>
+                            style="padding-top: 32px;padding-left:26px ;font-size: 14px;color: #424242;width: 200px;height: 32px;">
+                            兑换积分：{{ goodsInfo.needPoints || ''}}积分</div>
 
                         <div style="display: flex;justify-content: center; padding-top: 65px; width:100% ;height:42px ;">
                             <div
                                 style="background: linear-gradient(93.06deg, #DE6247 9.87%, #F78848 98.37%);width:271px;height: 42px;border-radius: 100px;display: flex;justify-content: center;align-items: center;">
-                                <div style="font-size: 16px;color:#F8F8F8;">确认兑换</div>
+                                <div @click="confirmBuy" style="font-size: 16px;color:#F8F8F8;">确认兑换</div>
                             </div>
                         </div>
                     </div>
@@ -57,6 +57,7 @@
     </div>
 </template>
 <script>
+import { CellGroup } from 'vant'
 import Elect from '../components/Elect.vue'
 export default {
     name: 'cellMall',
@@ -67,14 +68,16 @@ export default {
         return {
             active: 0,
             typeList: ['数码家电', '家居用品', '办公用品', '环境耗材'],
-            show: true,
+            show: false,
             user:{},
-            goodsList:[]
+            goodsList:[],
+            goodsInfo:{},
+            type:'数码家电'
         }
     },
     created() {
         
-        let user = localStorage.getItem('userInfo')
+        let user = sessionStorage.getItem('userInfo')
         if (user) {
             this.logined = true
             this.user = JSON.parse(user)      
@@ -85,7 +88,39 @@ export default {
 
     },
     methods: {
-      
+        buyGood(data){
+            this.show=true
+            this.goodsInfo=data
+            
+        },
+        confirmBuy(){
+            
+            let obj={
+                pointsOwnerId:this.user.id,
+                prizeId:this.goodsInfo.id
+            }
+            const jsonData = JSON.stringify(obj);
+            // 发送POST请求
+            fetch('/api/prize-redemption-order/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: jsonData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data,11111);
+                    this.show=false
+                    this.user.points=this.user.points-this.goodsInfo.needPoints
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    },
+    watch:{
+        active(){
+            this.type=this.typeList[this.active];
+        }
     }
 }
 </script>

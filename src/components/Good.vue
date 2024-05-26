@@ -10,7 +10,7 @@
         </div>
         <div class="buy">
             <div style="color:#DF1331;font-size: 12px;font-weight: 700;">{{ good.needPoints }} 积分</div>
-            <button class="buyBtn">立即兑换</button>
+            <button @click="buy(good)" class="buyBtn">立即兑换</button>
         </div>
     </div>
 </template>
@@ -26,6 +26,11 @@ export default {
         return {
         
         };
+    },
+    methods:{
+        buy(data){
+            this.$emit('buy',data)
+        }
     }
 };
 </script>
