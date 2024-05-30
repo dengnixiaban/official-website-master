@@ -22,7 +22,7 @@
         </van-tabs>
       
         <Elect @buyGood="buyGood" :type="type"></Elect>
-      
+        
         
         <van-dialog v-model="show" :show-confirm-button="false">
                 <div style="width: 322px;height:316px;border-redius:12px;margin-top: -1px;position: relative;">

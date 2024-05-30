@@ -18,20 +18,20 @@
                 <div
                     style="width: 365px;height: 57px;background: linear-gradient(89.31deg, #FFD447 -24.14%, #FF8D39 99.77%);border-radius: 8px 8px 0 0;padding: 16px 12px 0 12px;display: flex;justify-content: space-between;">
 
-                    <div style="display:flex;height:24px;padding-left: 14PX;align-items: center;">
+                    <!-- <div style="display:flex;height:24px;padding-left: 14PX;align-items: center;">
                         <img src="../assets/img/mall-icon.png" style="width: 24px;height: 24px;">
                         <div style="font-size: 14px;color: #FEFFFF;">可用积分:</div>
                         <div style="color:cadetblue ;padding-left: 5px;font-size: 16px;font-weight: 700;">
                             {{ user ? user.points :
                                 0 }}</div>
-                    </div>
+                    </div> -->
                     <div style="width: 160px; font-size: 16px;color:#FCFCFC; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
                         {{ user ? user.company : '' }}
                     </div>
                 </div>
 
             </div>
-            <div style="width:100vw ;height:377px;padding:12px;margin-top: 140px;">
+            <div style="width:100vw ;height:377px;padding:12px;margin-top: 110px;">
                 <div class="info">
                     <div style="font-size:16px ;color:#000000;padding-left: 4px;">收货信息</div>
                     <div style="font-size:14px ;color:#000000;padding-top: 16px;padding-left: 4px;">收货姓名：</div>

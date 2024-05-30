@@ -50,13 +50,14 @@ export default {
 <style scoped>
 .content {
     width: 100%;
-    height: calc(100vh - 322px);
+    height: calc(100vh - 332px);
     background-color: #ffffff;
     padding: 14px;
     overflow-y: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 </style>
   

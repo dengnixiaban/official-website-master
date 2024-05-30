@@ -19,10 +19,18 @@ export default {
     },
     data() {
         return {
-            recordList:[]
+            recordList:[],
+            name:'11'
         }
     },
     created(){
+        let user = sessionStorage.getItem('userInfo')
+        
+        if (user) {
+          
+            this.name = JSON.parse(user).name
+
+        }
         this.getList()
     },
     mounted() {
@@ -31,7 +39,7 @@ export default {
     methods: {
         getList() {
             
-            fetch("/api/points-record/list?pageNum=1&&pageSize=10")
+            fetch("/api/points-record/list?pageNum=1&&pageSize=10&&name="+this.name)
                 .then(response => response.json())
                 .then(data => {
                     this.recordList = data.data.list
