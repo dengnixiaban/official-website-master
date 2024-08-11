@@ -1,6 +1,6 @@
 <template>
     <div class="good">
-        <img class="goodImg" :src="good.imageUrl"
+        <img @click="buy(good)"  class="goodImg" :src="good.imageUrl"
             alt="">
         <div style="padding-left:12px;font-size: 14px;font-weight: 700;padding-top: 4px;">
             {{ good.name }}

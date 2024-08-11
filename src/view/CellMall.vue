@@ -43,9 +43,9 @@
                             兑换积分：{{ goodsInfo.needPoints || ''}}积分</div>
 
                         <div style="display: flex;justify-content: center; padding-top: 65px; width:100% ;height:42px ;">
-                            <div
+                            <div @click="confirmBuy"
                                 style="background: linear-gradient(93.06deg, #DE6247 9.87%, #F78848 98.37%);width:271px;height: 42px;border-radius: 100px;display: flex;justify-content: center;align-items: center;">
-                                <div @click="confirmBuy" style="font-size: 16px;color:#F8F8F8;">确认兑换</div>
+                                <div  style="font-size: 16px;color:#F8F8F8;">确认兑换</div>
                             </div>
                         </div>
                     </div>
@@ -59,6 +59,7 @@
 <script>
 import { CellGroup } from 'vant'
 import Elect from '../components/Elect.vue'
+import { Toast } from 'vant';
 export default {
     name: 'cellMall',
     components: {
@@ -110,9 +111,14 @@ export default {
             })
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data,11111);
-                    this.show=false
-                    this.user.points=this.user.points-this.goodsInfo.needPoints
+                    console.log(data,1111);
+                    if(data.code==-1){
+                        Toast.success(data.msg);
+                    }else{
+                        this.show=false
+                        this.user.points=this.user.points-this.goodsInfo.needPoints
+                    }
+                    
                 })
                 .catch(error => console.error('Error:', error));
         }

@@ -28,7 +28,7 @@ export default {
     methods: {
         getList() {
             
-            fetch("/api/prize/list?pageNum=1&&pageSize=10&&type="+this.type)
+            fetch("/api/prize/list?pageNum=1&&pageSize=100&&type="+this.type)
                 .then(response => response.json())
                 .then(data => {
                     this.goodsList = data.data.list
@@ -50,7 +50,7 @@ export default {
 <style scoped>
 .content {
     width: 100%;
-    height: calc(100vh - 332px);
+    height: calc(100vh - 362px);
     background-color: #ffffff;
     padding: 14px;
     overflow-y: auto;

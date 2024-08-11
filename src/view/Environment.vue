@@ -3,9 +3,6 @@
         <div class="row">
             <div class="contentImg">
                 <div class="imgDiv">
-                    <img src="https://gw.alicdn.com/bao/uploaded/i1/2214331328448/O1CN01COth7L2CHEp4Fye5Y_!!2214331328448.png" alt="" class="goodsImg" />
-                </div>
-                <div class="imgDiv">
                     <img src="../assets/img/goods/CQD.png" alt="" class="goodsImg" />
                 </div>
                 <div class="imgDiv">
