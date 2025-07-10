@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-
+import store from './store'
 /* 路由 */
 import router from './router'
 
@@ -33,10 +33,6 @@ Vue.component(Header.name,Header)
 import Footer from './components/Footer'
 Vue.component(Footer.name,Footer)
 
-/* 回到顶部 */
-import GoTop from './components/GoTop'
-Vue.component(GoTop.name,GoTop)
-
 Vue.config.productionTip = false
 import Vant from 'vant';
 import 'vant/lib/index.css';
@@ -52,6 +48,9 @@ router.beforeEach((to, from, next) => {
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
+
+

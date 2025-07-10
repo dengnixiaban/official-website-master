@@ -4,8 +4,6 @@
     <div class="content">
       <router-view />
     </div>
-
-    <Footer v-if="!isMob"></Footer>
   </div>
 </template>
 

@@ -17,67 +17,9 @@ export default new Router({
       }
     },
     {
-      path: '/moble',
-      name: 'moble',
-      component: resolve => require(['@/view/MobleHome'], resolve),
-      meta: {
-        title: '广州中检仪达实验器材有限公司'
-      },
-      children: [
-        {
-          path: 'cell-mall',
-          name: 'cell-mall',
-          component: resolve => require(['@/view/CellMall'], resolve),
-          meta: {
-            title: '广州中检仪达实验器材有限公司'
-          }
-        },
-        {
-          path: 'cell-record',
-          name: 'cell-record',
-          component: resolve => require(['@/view/CellRecord'], resolve),
-          meta: {
-            title: '广州中检仪达实验器材有限公司'
-          }
-        },
-        {
-          path: 'cell-mine',
-          name: 'cell-mine',
-          component: resolve => require(['@/view/CellMine'], resolve),
-          meta: {
-            title: '广州中检仪达实验器材有限公司'
-          }
-        },
-      ]
-    },
-    {
-      path: '/environment',
-      name: 'environment',
-      component: resolve => require(['@/view/Environment'], resolve),
-      meta: {
-        title: '广州中检仪达实验器材有限公司'
-      },
-    },
-    {
-      path: '/smallbottle',
-      name: 'smallbottle',
-      component: resolve => require(['@/view/Smallbottle'], resolve),
-      meta: {
-        title: '广州中检仪达实验器材有限公司'
-      },
-    },
-    {
-      path: '/needle',
-      name: 'needle',
-      component: resolve => require(['@/view/Needle'], resolve),
-      meta: {
-        title: '广州中检仪达实验器材有限公司'
-      },
-    },
-    {
-      path: '/accessories',
-      name: 'accessories',
-      component: resolve => require(['@/view/Accessories'], resolve),
+      path: '/productCenter',
+      name: 'productCenter',
+      component: resolve => require(['@/view/ProductCenter'], resolve),
       meta: {
         title: '广州中检仪达实验器材有限公司'
       },
@@ -90,9 +32,16 @@ export default new Router({
         title: '广州中检仪达实验器材有限公司'
       }
     }, {
-      path: '/contactus',
-      name: 'contactus',
+      path: '/contact',
+      name: 'contact',
       component: resolve => require(['@/view/ContactUs'], resolve),
+      meta: {
+        title: '广州中检仪达实验器材有限公司'
+      }
+    }, {
+      path: '/aboutUs',
+      name: 'aboutUs',
+      component: resolve => require(['@/view/AboutUs'], resolve),
       meta: {
         title: '广州中检仪达实验器材有限公司'
       }

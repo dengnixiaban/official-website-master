@@ -1,138 +1,57 @@
 <template>
   <!-- 头部整体盒子 -->
-  <div id="header" class="container-fuild">
+  <div id="header">
     <!-- 头部顶部 -->
-    <div class="header-top container-fuild hidden-xs">
-      <div class="container">
-        <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone"></span>18328501489
-          <span class="glyphicon glyphicon-envelope"></span>zhongjianyida@163.com
-          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
+  
+    <img src="../assets/img/home/logo.png" style="width: 354px;height: 90px;">
+    <div style="display: flex;">
+        <div  class="navMenuItem" v-for="(item,index) in navList" :key="index" @click="navClick(item,item.name)">
+           <div :class="navType == item.name ? 'activeMenu':'navText'"  style="padding-bottom: 5px;">
+             {{ item.name }}
+           </div>
         </div>
-        <div class="shejiao pull-right">
-          <span class="glyphicon glyphicon-hand-right"></span>您的实验器材管家：省心、省力、省时
-          <span class="glyphicon glyphicon-hand-left"></span>
-        </div>
-      </div>
-    </div>
-    <!-- 电脑导航 -->
-    <div class="header-nav container hidden-xs">
-    
-      <div class="header-nav-logo company">广州中检仪达实验器材有限公司</div>
-      <!-- 导航内容 -->
-      <ul class="header-nav-wrapper">
-        <li
-          v-for="(item,index) in navList"
-          :key="index"
-          :class="index==navIndex?'active':''"
-          @click="navClick(index,item.name)"
-        >
-          <router-link :to="item.path">
-            {{item.name}}
-            <span v-if="item.children.length>0" class="glyphicon glyphicon-menu-down"></span>
-            <i class="underline"></i>
-          </router-link>
-          <dl v-if="item.children.length>0">
-            <dt v-for="(i,n) in item.children" :key="n">
-              <router-link :to="i.path">{{i.name}}</router-link>
-            </dt>
-          </dl>
-        </li>
-      </ul>
-    </div>
-    <!-- 手机导航 -->
-    <div class="header-nav-m container-fuild visible-xs">
-      <div class="header-nav-m-logo">
-        <img class="center-block" src="@/assets/img/logo_black.png" alt="logo">
-      </div>
-      <!-- 导航栏 -->
-      <div class="header-nav-m-menu text-center">
-        {{menuName}}
-        <div
-          class="header-nav-m-menu-wrapper"
-          data-toggle="collapse"
-          data-target="#menu"
-          @click="menuClick"
-        >
-          <span :class="menuClass"></span>
-        </div>
-        <!-- 导航内容 -->
-        <ul id="menu" class="header-nav-m-wrapper collapse">
-          <li
-            v-for="(item,index) in navList"
-            :key="index"
-            :class="index==navIndex?'active':''"
-            @click="navClick(index,item.name)"
-            data-toggle="collapse"
-            data-target="#menu"
-          >
-            <router-link :to="item.path">
-              {{item.name}}
-              <i class="underline"></i>
-            </router-link>
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: "Header",
   data() {
     return {
-      navIndex: sessionStorage.getItem('navIndex') ? sessionStorage.getItem('navIndex') : 0,
-      menuName: "首页",
       menuClass: "glyphicon glyphicon-menu-down",
       navList: [
         {
           name: "首页",
           path: "/",
-          children: []
         },
         {
-          name: "主营产品",
-          path: "/software",
-          children: [
-            {
-              name: "采样袋",
-              path: "/environment"
-            },
-            {
-              name: "采样管",
-              path: "/smallbottle"
-            },
-            {
-              name: "滤筒滤膜",
-              path: "/needle"
-            },
-        
-            {
-              name: "仪器配件",
-              path: "/accessories"
-            },
-          
-          ]
+          name: "产品中心",
+          path: "/productCenter",
         },
-     
         {
-          name: "公司介绍",
-          path: "/companyintroduction",
-          children: []
+          name: "关于我们",
+          path: "/aboutUs",
+        },
+        {
+          name: "技术支持",
+          path: "/support",
         },
         {
           name: "联系我们",
-          path: "/contactus",
-          children: []
-        }
+          path: "/contact",
+        },
       ]
     };
   },
+  computed: {
+    ...mapGetters(['navType'])
+  },
   methods: {
-    navClick(index, name) {
-      this.navIndex = index;
-      sessionStorage.setItem('navIndex',index)
-      this.menuName = name;
+    navClick(item, name) {
+      this.$store.commit('setNavType', name)
+     this.$router.push(item.path);
+
     },
     menuClick() {
       if (this.menuClass == "glyphicon glyphicon-menu-down") {
@@ -147,204 +66,34 @@ export default {
 <style scoped>
 /* 顶部 */
 #header {
-  background: #f4f4f4;
-  transition: all ease 0.6s;
-}
-#header .header-top {
-  height: 50px;
-  color: #fff;
-  font-size: 12px;
-  line-height: 50px;
-  background: #474747;
-}
-/* 顶部的图标 */
-#header .header-top span {
-  margin: 0 8px;
-}
-/* 导航栏 */
-#header .header-nav {
-  height: 110px;
-}
-/* 导航栏logo */
-#header .header-nav .header-nav-logo {
-  
-  height: 100%;
-  float: left;
-  position: relative;
-  opacity:0.9
-}
-.company{
-  padding-top:50px
-}
-/* 导航栏logo图片 */
-#header .header-nav .header-nav-logo img {
-  width: 95px;
-  height: 45px;
+  padding: 60px 298px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  z-index: 999;
 }
-/* 导航栏 导航容器 */
-#header .header-nav-fixed .header-nav-wrapper {
-  line-height: 50px;
+.activeMenu{
+  font-weight: 700;
+  border-bottom: 3px solid #358dcf;
 }
-#header .header-nav .header-nav-wrapper {
-  line-height: 110px;
-  float: right;
-  margin: 0;
-  max-width: 800px;
-}
-/* 导航栏 每个导航 */
-#header .header-nav .header-nav-wrapper > li {
-  float: left;
-  margin: 0 15px;
-  position: relative;
-}
-/* 导航栏 每个导航下面的 a 链接 */
-#header .header-nav .header-nav-wrapper > li > a {
-  color: #000;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 15px 0;
-  position: relative;
-}
-/* 导航栏 每个导航下面的 a 链接的下划线 */
-#header .header-nav .header-nav-wrapper > li > a > i {
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  opacity: 0;
-  transition: all 0.6s ease;
-  background-color: #1e73be;
-}
-/* 导航栏 每个导航下面的 a 链接的右侧小三角 */
-#header .header-nav .header-nav-wrapper > li > a > span {
-  font-size: 12px;
-  transition: transform ease 0.5s;
-}
-/* 导航栏 每个导航下面的 a 链接 鼠标滑上去的样式 */
-#header .header-nav .header-nav-wrapper > li > a:hover {
-  color: #1e73be;
-  text-decoration: none;
-}
-/* 导航栏 每个导航下面的 a 链接 鼠标滑上去下划线的样式 */
-#header .header-nav .header-nav-wrapper > li > a:hover .underline {
-  opacity: 1;
-  width: 100%;
-  left: 0;
-}
-/* 导航栏 每个导航下面的 a 链接 鼠标滑上去三角标的样式 */
-#header .header-nav .header-nav-wrapper > li > a:hover span {
-  transform: rotate(180deg);
-}
-/* 导航栏 每个导航下面的 a 链接 鼠标点击后的样式 */
-#header .header-nav .header-nav-wrapper > li.active > a {
-  color: #1e73be;
-  text-decoration: none;
-  border-bottom: 2px solid #1e73be;
-}
-/* 导航栏 每个导航下面的二级导航容器 */
-#header .header-nav .header-nav-wrapper > li > dl {
-  display: none;
-  position: absolute;
-  width: 168px;
-  top: 80%;
-  left: 0;
-  z-index: 999999;
-  box-shadow: 0 0 3px 1px #ccc;
-  background: #fff;
-}
-/* 导航栏 每个导航下面的二级导航容器的每个导航 */
-#header .header-nav .header-nav-wrapper > li > dl > dt {
-  width: 100%;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-/* 导航栏 每个导航下面的二级导航容器的每个导航 当鼠标滑上时的样式*/
-#header .header-nav .header-nav-wrapper > li > dl > dt > a:hover {
-  text-decoration: none;
-}
-/* 导航栏 滑上一级导航显示二级导航 */
-#header .header-nav .header-nav-wrapper > li:hover dl {
-  display: block;
-}
-#header .header-nav .header-nav-wrapper > li > dl > dt:hover {
+.navMenuItem {
+  padding: 5px 20px;
   cursor: pointer;
-  background: #ccc;
+  font-size: 20px;
 }
-@media screen and (max-width: 997px) {
-  #header .header-nav-m {
-    position: relative;
-  }
-  /* 导航栏logo容器 */
-  #header .header-nav-m .header-nav-m-logo {
-    height: 80px;
-    position: relative;
-  }
-  /* 导航栏logo图片 */
-  #header .header-nav-m .header-nav-m-logo img {
-    width: 95px;
-    height: 45px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  /* 导航栏  菜单容器 */
-  #header .header-nav-m .header-nav-m-menu {
-    color: #fff;
-    height: 50px;
-    font-size: 20px;
-    line-height: 50px;
-    background: #474747;
-    position: relative;
-  }
-  /* 导航栏 菜单图标 */
-  #header .header-nav-m .header-nav-m-menu-wrapper {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    margin-top: -20px;
-    width: 50px;
-    height: 40px;
-    color: #fff;
-    z-index: 999999;
-    font-size: 12px;
-  }
-  /* 导航栏 */
-  #header .header-nav-m .header-nav-m-wrapper {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    background: #474747;
-    z-index: 9999999;
-  }
-  /* 导航栏 每个导航 */
-  #header .header-nav-m .header-nav-m-wrapper > li {
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid #ccc;
-  }
-  /* 导航栏 每个导航下面的 a 链接 */
-  #header .header-nav-m .header-nav-m-wrapper > li > a {
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 15px 0;
-    position: relative;
-  }
-  /* 导航栏 每个导航下面的 a 链接的右侧小三角 */
-  #header .header-nav .header-nav-wrapper > li > a > span {
-    font-size: 10px;
-  }
+
+.navText {
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
 }
+
+.navMenuItem:hover .navText {
+  border-bottom: 3px solid #358dcf;
+  font-weight: 700;
+}
+
 </style>
