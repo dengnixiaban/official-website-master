@@ -25,6 +25,14 @@ export default new Router({
       },
     },
     {
+      path: '/productDetails',
+      name: 'productDetails',
+      component: resolve => require(['@/view/ProductDetails'], resolve),
+      meta: {
+        title: '广州中检仪达实验器材有限公司'
+      },
+    },
+    {
       path: '/companyintroduction',
       name: 'companyintroduction',
       component: resolve => require(['@/view/CompanyIntroduction'], resolve),

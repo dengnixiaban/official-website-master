@@ -35,7 +35,7 @@ export default {
         },
         {
           name: "技术支持",
-          path: "/support",
+         // path: "/support",
         },
         {
           name: "联系我们",

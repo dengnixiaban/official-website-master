@@ -3,8 +3,8 @@
         <img src="../assets/img/productCenter/bg.jpg" style="width: 100%;height: 210px;">
         <div style="width: 100%;height: 40px;padding: 0 20%;display: flex;justify-content: space-between;background-color: #358dcf">
             <div style="width: auto;height: 40px;color: #fff;font-size: 18px;padding: 10px;cursor: pointer;" v-for="(item ,index) in goodsList" :key="index"
-            @click="checkNav = index"
-            :class="{ check: checkNav === index }"
+            @click="checkGoodType(index)"
+            :class="{ check: goodType === index }"
             >{{ item.title }}</div>
         </div>
         <div class="content">
@@ -14,25 +14,25 @@
                     <div style="width: 100%;display: flex;justify-content: space-between;">
                         <div style="color:#666666;">天猫店铺: 中谱星旗舰店</div>
                         <div style="width: 80px;height: 30px;display: flex;justify-content: center;align-items: center;cursor: pointer;background-color: #358dcf;">
-                          <div style="color: #fff;">进入店铺</div>
+                          <div @click="go(logos[0].path)" style="color: #fff;">进入店铺</div>
                         </div>
                     </div>
                      <div style="width: 100%;display: flex;justify-content: space-between;padding-top: 36px;">
                         <div style="color:#666666;">京东店铺: 中谐星旗舰店</div>
                         <div style="width: 80px;height: 30px;display: flex;justify-content: center;align-items: center;cursor: pointer;background-color: #358dcf;">
-                          <div style="color: #fff;">进入店铺</div>
+                          <div  @click="go(logos[2].path)" style="color: #fff;">进入店铺</div>
                         </div>
                     </div>
                      <div style="width: 100%;display: flex;justify-content: space-between;padding-top: 36px;">
                         <div style="color:#666666;">1688店铺: 广州中检仪达实验器材有限公司</div>
                         <div style="width: 80px;height: 30px;display: flex;justify-content: center;align-items: center;cursor: pointer;background-color: #358dcf;">
-                          <div style="color: #fff;">进入店铺</div>
+                          <div  @click="go(logos[3].path)"  style="color: #fff;">进入店铺</div>
                         </div>
                     </div>
                     <div style="padding-top: 50px;">
                       <div style="display: flex;align-items: center;padding-top: 12px;">
                         <img src="../assets/img/contactUs/cell.png" style="width: 24px;height: 24px;">
-                        <div style="color: #666666;font-size: 16px;padding-left: 6px;">电话:13828810709(微信同号)</div>
+                        <div style="color: #666666;font-size: 16px;padding-left: 6px;">电话:13828810709</div>
                       </div>
                       <div style="display: flex;align-items: center;padding-top: 12px;">
                         <img src="../assets/img/contactUs/wx.png" style="width: 24px;height: 24px;">
@@ -53,12 +53,12 @@
 </template>
 <script>
 import { goodsList } from '../utils/goodsList';
+import { mapGetters } from 'vuex'
 export default {
   name: "ContactUs",
   data() {
     return {
         goodsList,
-        checkNav:0,
         logos:[{
         title:'天猫',
         logo:require('@/assets/img/home/tm.png'),
@@ -88,12 +88,20 @@ export default {
         checkLogo:9
     };
   },
+    computed: {
+    ...mapGetters(['goodType'])
+  },
   mounted() {
  
   },
   methods:{
     go(path){
          window.location.href = path;
+    },
+    checkGoodType(index){
+        this.$store.commit('setGoodType', index);
+         this.$router.push('/productCenter');
+         this.$store.commit('setNavType', '产品中心');
     }
   }
 };

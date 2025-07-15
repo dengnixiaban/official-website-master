@@ -3,8 +3,8 @@
         <img src="../assets/img/productCenter/bg.jpg" style="width: 100%;height: 210px;">
         <div style="width: 100%;height: 40px;padding: 0 20%;display: flex;justify-content: space-between;background-color: #358dcf">
             <div style="width: auto;height: 40px;color: #fff;font-size: 18px;padding: 10px;cursor: pointer;" v-for="(item ,index) in goodsList" :key="index"
-            @click="checkNav = index"
-            :class="{ check: checkNav === index }"
+            @click="checkGoodType(index)"
+            :class="{ check: goodType === index }"
             >{{ item.title }}</div>
         </div>
         <div class="content">
@@ -21,7 +21,7 @@
                         1.自主研发与品质控制
                     </div>
                     <div class="abouts_text">
-                        旗下中谱星、跃谱品牌拥有多项专利技术，核心产品通过CNAS、CE、FDA认证。严格遵循IS09001质量管理体系，从原材料到成品全程质控。
+                        旗下中谱星品牌拥有多项专利技术，核心产品通过CNAS、CE、FDA认证。严格遵循IS09001质量管理体系，从原材料到成品全程质控。
                     </div>
                     <div class="abouts_title">2.全渠道销售网络</div>
                     <div class="abouts_text">线上电商:覆盖天猫、京东、1688等平台，提供便捷采购体验。</div>
@@ -97,12 +97,12 @@
 </template>
 <script>
 import { goodsList } from '../utils/goodsList';
+import { mapGetters } from 'vuex'
 export default {
   name: "ContactUs",
   data() {
     return {
         goodsList,
-        checkNav:0,
         logos:[{
         title:'天猫',
         logo:require('@/assets/img/home/tm.png'),
@@ -132,12 +132,20 @@ export default {
         checkLogo:9
     };
   },
+  computed: {
+    ...mapGetters(['goodType'])
+  },
   mounted() {
  
   },
   methods:{
     go(path){
          window.location.href = path;
+    },
+    checkGoodType(index){
+        this.$store.commit('setGoodType', index);
+         this.$router.push('/productCenter');
+          this.$store.commit('setNavType', '产品中心');
     }
   }
 };

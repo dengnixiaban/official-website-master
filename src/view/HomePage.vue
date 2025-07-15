@@ -57,7 +57,7 @@
                 1.自主研发与品质控制
               </div>
               <div>
-                旗下中谱星、品牌拥有多项专利技术，核心产品通过CNAS、CE、FDA认证。严格遵循IS0 9001质量管理体系，从原材料到成品全程质控。
+                旗下中谱星品牌拥有多项专利技术，核心产品通过CNAS、CE、FDA认证。严格遵循IS0 9001质量管理体系，从原材料到成品全程质控。
               </div>
             </div>
             <div style="padding-top: 36px;">
@@ -79,7 +79,7 @@
                 3.品牌愿景
               </div>
               <div>
-                “精准成就未来,让环境检测更轻松”为使命，持续推动检测技术智能化，国产化””*，助力全球科学研究和产业升级。
+                “精准成就未来,让环境检测更轻松”为使命，持续推动检测技术智能化，国产化"，助力全球科学研究和产业升级。
               </div>
             </div>
              <div style="padding-top: 36px;">
@@ -220,9 +220,9 @@
                    <div>{{ item }}</div>
                 </div>
               </div>
-              <div style="width: 1300px;height: 900px; display: flex; flex-wrap: wrap;padding-left: 100px;overflow: hidden;">
+              <div style="width: 1300px;height: 900px; display: flex; flex-wrap: wrap;padding-left: 100px;overflow: auto;align-content: flex-start;gap: 18px;">
                     <div v-for="(item , index ) in goodsList[typeSelected].goods" :key="index" style="width: 205px;height: 265px;margin-bottom: 20px;margin-left: 20px;">
-                        <img :src="item.imgMain" style="width: 205px;height: 205px;">
+                        <img @click="goDetails(item)" :src="item.imgMain" style="width: 205px;height: 205px;">
                         <div style="width: 205px;height: 60px;display: flex;justify-content: center;align-items: center;font-size: 16px;color: #999999;">
                               <div>{{ item.name }}</div>
                         </div>
@@ -265,11 +265,7 @@ export default {
         logo:require('@/assets/img/home/1688.png'),
         path:'https://shop82v7v76420398.1688.com/page/index.html?spm=0.0.wp_pc_common_header_companyName_undefined.0'
       },
-      {
-        title:'拼多多',
-        logo:require('@/assets/img/home/pdd.png'),
-        path:''
-      },
+     
       ],
       current: 0,
       timer: null,
@@ -280,7 +276,7 @@ export default {
           logos: require("@/assets/img/home/zxs.png"),
           title: "工厂直销",
           content1: "我们是厂家直销",
-          content2: "品质更好，价格更低"
+          content2: "品质更好，价格更优"
         },
         {
           logo: require("@/assets/img/home/pl.png"),
@@ -301,11 +297,11 @@ export default {
           logos: require("@/assets/img/home/wys.png"),
           title: "售后无忧",
           content1: "7X24小时售后服务，",
-          content2: "不满意免费退换货，我们承担邮费"
+          content2: "及时响应，提供有效服务"
         }
       ],
       checkIntro:1,
-      productTypes:['气体采样袋采样瓶','气体采样管','滤膜滤筒','水质采样','土壤采样','低浓度颗粒物采样','仪器配件'],
+      productTypes:['气体采样袋','气体采样管','滤膜滤筒','水质采样','土壤采样','低浓度颗粒物采样','仪器配件'],
       typeSelected:0,
       serveType:9,
       goodsList
@@ -325,6 +321,14 @@ beforeDestroy() {
 methods:{
   goStore(path){
     window.location.href = path;
+  },
+  goDetails(data){
+    this.$router.push({
+      path: '/productDetails',
+      query: {
+        details: JSON.stringify(data)
+      }
+    });
   }
 }
 };

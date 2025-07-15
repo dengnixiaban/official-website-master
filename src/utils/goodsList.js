@@ -1,14 +1,21 @@
 export const goodsList =[
     {
         id:1,
-        title:'气体采样袋采样瓶',
+        title:'气体采样袋',
         goods:[
             {
                 id:1,
                 name:'臭气采样袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/1.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E8%A2%8B/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E8%A2%8B/8008.jpg'
                 ]
             },
             {
@@ -16,23 +23,45 @@ export const goodsList =[
                 name:'臭气采样瓶',
                 imgMain:require('@/assets/img/goodsCenter/cyd/2.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E7%93%B6/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E7%93%B6/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E7%93%B6/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E7%93%B6/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E7%93%B6/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E7%93%B6/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E7%93%B6/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E7%93%B6/8008.jpg'
                 ]
             },
             {
                 id:3,
-                name:'国产PVF采样袋',
+                name:'PVF采样袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/3.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%9B%BD%E4%BA%A7PVF%E9%87%87%E6%A0%B7%E8%A2%8B/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%9B%BD%E4%BA%A7PVF%E9%87%87%E6%A0%B7%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%9B%BD%E4%BA%A7PVF%E9%87%87%E6%A0%B7%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%9B%BD%E4%BA%A7PVF%E9%87%87%E6%A0%B7%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%9B%BD%E4%BA%A7PVF%E9%87%87%E6%A0%B7%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%9B%BD%E4%BA%A7PVF%E9%87%87%E6%A0%B7%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%9B%BD%E4%BA%A7PVF%E9%87%87%E6%A0%B7%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%9B%BD%E4%BA%A7PVF%E9%87%87%E6%A0%B7%E8%A2%8B/8008.jpg',
+                    
                 ]
             },
             {
                 id:4,
-                name:'国产PVF采样袋密封条款',
+                name:'PVF采样袋密封条款',
                 imgMain:require('@/assets/img/goodsCenter/cyd/4.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8008.jpg',
                 ]
             },
             {
@@ -40,7 +69,14 @@ export const goodsList =[
                 name:'加强款臭气袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/5.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%8A%A0%E5%BC%BA%E8%87%AD%E6%B0%94%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%8A%A0%E5%BC%BA%E8%87%AD%E6%B0%94%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%8A%A0%E5%BC%BA%E8%87%AD%E6%B0%94%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%8A%A0%E5%BC%BA%E8%87%AD%E6%B0%94%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%8A%A0%E5%BC%BA%E8%87%AD%E6%B0%94%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%8A%A0%E5%BC%BA%E8%87%AD%E6%B0%94%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%8A%A0%E5%BC%BA%E8%87%AD%E6%B0%94%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%8A%A0%E5%BC%BA%E8%87%AD%E6%B0%94%E8%A2%8B/8008.jpg',
                 ]
             },
             {
@@ -48,7 +84,14 @@ export const goodsList =[
                 name:'静电袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/6.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%9D%99%E7%94%B5%E8%A2%8B/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%9D%99%E7%94%B5%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%9D%99%E7%94%B5%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%9D%99%E7%94%B5%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%9D%99%E7%94%B5%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%9D%99%E7%94%B5%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%9D%99%E7%94%B5%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%9D%99%E7%94%B5%E8%A2%8B/8008.jpg',
                 ]
             },
             {
@@ -56,7 +99,14 @@ export const goodsList =[
                 name:'聚乙烯PE气味袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/7.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/PE%E6%B0%94%E5%91%B3%E8%A2%8B/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/PE%E6%B0%94%E5%91%B3%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/PE%E6%B0%94%E5%91%B3%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/PE%E6%B0%94%E5%91%B3%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/PE%E6%B0%94%E5%91%B3%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/PE%E6%B0%94%E5%91%B3%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/PE%E6%B0%94%E5%91%B3%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/PE%E6%B0%94%E5%91%B3%E8%A2%8B/8008.jpg',
                 ]
             },
             {
@@ -64,7 +114,14 @@ export const goodsList =[
                 name:'铝箔采气袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/8.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%93%9D%E7%AE%94%E8%A2%8B/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%93%9D%E7%AE%94%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%93%9D%E7%AE%94%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%93%9D%E7%AE%94%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%93%9D%E7%AE%94%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%93%9D%E7%AE%94%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%93%9D%E7%AE%94%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E9%93%9D%E7%AE%94%E8%A2%8B/8008.jpg',
                 ]
             },
             {
@@ -72,7 +129,14 @@ export const goodsList =[
                 name:'平衡臭气袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/9.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%B9%B3%E8%A1%A1%E8%87%AD%E6%B0%94%E8%A2%8B/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%B9%B3%E8%A1%A1%E8%87%AD%E6%B0%94%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%B9%B3%E8%A1%A1%E8%87%AD%E6%B0%94%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%B9%B3%E8%A1%A1%E8%87%AD%E6%B0%94%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%B9%B3%E8%A1%A1%E8%87%AD%E6%B0%94%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%B9%B3%E8%A1%A1%E8%87%AD%E6%B0%94%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%B9%B3%E8%A1%A1%E8%87%AD%E6%B0%94%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%B9%B3%E8%A1%A1%E8%87%AD%E6%B0%94%E8%A2%8B/8008.jpg',
                 ]
             },
             {
@@ -80,7 +144,14 @@ export const goodsList =[
                 name:'泰德拉采样袋密封条款',
                 imgMain:require('@/assets/img/goodsCenter/cyd/10.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E6%8B%89%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8008.jpg',
                 ]
             },
             {
@@ -88,14 +159,29 @@ export const goodsList =[
                 name:'泰德拉采样袋四边封款',
                 imgMain:require('@/assets/img/goodsCenter/cyd/11.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E5%95%A6%E9%87%87%E6%A0%B7%E8%A2%8B%E5%9B%9B%E8%BE%B9%E5%B0%81%E6%AC%BE/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E5%95%A6%E9%87%87%E6%A0%B7%E8%A2%8B%E5%9B%9B%E8%BE%B9%E5%B0%81%E6%AC%BE/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E5%95%A6%E9%87%87%E6%A0%B7%E8%A2%8B%E5%9B%9B%E8%BE%B9%E5%B0%81%E6%AC%BE/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E5%95%A6%E9%87%87%E6%A0%B7%E8%A2%8B%E5%9B%9B%E8%BE%B9%E5%B0%81%E6%AC%BE/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E5%95%A6%E9%87%87%E6%A0%B7%E8%A2%8B%E5%9B%9B%E8%BE%B9%E5%B0%81%E6%AC%BE/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E5%95%A6%E9%87%87%E6%A0%B7%E8%A2%8B%E5%9B%9B%E8%BE%B9%E5%B0%81%E6%AC%BE/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E5%95%A6%E9%87%87%E6%A0%B7%E8%A2%8B%E5%9B%9B%E8%BE%B9%E5%B0%81%E6%AC%BE/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E6%B3%B0%E5%BE%B7%E5%95%A6%E9%87%87%E6%A0%B7%E8%A2%8B%E5%9B%9B%E8%BE%B9%E5%B0%81%E6%AC%BE/8008.jpg',
                 ]
             },
             {
                 id:12,
-                name:'特氟龙采样带',
+                name:'特氟龙采样袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/12.jpg'),
                 imgDetails:[
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8008.jpg',
 
                 ]
             },
@@ -104,7 +190,14 @@ export const goodsList =[
                 name:'特氟龙密封条款',
                 imgMain:require('@/assets/img/goodsCenter/cyd/13.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%AF%86%E5%B0%81%E6%9D%A1%E6%AC%BE/8008.jpg',
                 ]
             },
             {
@@ -112,7 +205,14 @@ export const goodsList =[
                 name:'特氟龙取样帽可扎针款',
                 imgMain:require('@/assets/img/goodsCenter/cyd/14.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%8F%96%E6%A0%B7%E5%B8%BD%E5%8F%AF%E6%89%8E%E9%92%88%E6%AC%BE/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%8F%96%E6%A0%B7%E5%B8%BD%E5%8F%AF%E6%89%8E%E9%92%88%E6%AC%BE/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%8F%96%E6%A0%B7%E5%B8%BD%E5%8F%AF%E6%89%8E%E9%92%88%E6%AC%BE/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%8F%96%E6%A0%B7%E5%B8%BD%E5%8F%AF%E6%89%8E%E9%92%88%E6%AC%BE/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%8F%96%E6%A0%B7%E5%B8%BD%E5%8F%AF%E6%89%8E%E9%92%88%E6%AC%BE/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%8F%96%E6%A0%B7%E5%B8%BD%E5%8F%AF%E6%89%8E%E9%92%88%E6%AC%BE/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%8F%96%E6%A0%B7%E5%B8%BD%E5%8F%AF%E6%89%8E%E9%92%88%E6%AC%BE/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/FEP%E9%87%87%E6%A0%B7%E8%A2%8B%E5%8F%96%E6%A0%B7%E5%B8%BD%E5%8F%AF%E6%89%8E%E9%92%88%E6%AC%BE/8008.jpg',
                 ]
             },
             {
@@ -120,7 +220,14 @@ export const goodsList =[
                 name:'嗅辩袋',
                 imgMain:require('@/assets/img/goodsCenter/cyd/15.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%97%85%E8%BE%A9%E8%A2%8B/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%97%85%E8%BE%A9%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%97%85%E8%BE%A9%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%97%85%E8%BE%A9%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%97%85%E8%BE%A9%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%97%85%E8%BE%A9%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%97%85%E8%BE%A9%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E8%A2%8B%E9%87%87%E6%A0%B7%E7%93%B6/%E5%97%85%E8%BE%A9%E8%A2%8B/8008.jpg',
                 ]
             },
         ]
@@ -131,26 +238,47 @@ export const goodsList =[
         goods:[
             {
                 id:1,
-                name:'不锈钢采样管铜帽',
+                name:'T-C复合管',
                 imgMain:require('@/assets/img/goodsCenter/cyg/1.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg'
                 ]
             },
             {
                 id:2,
-                name:'不锈钢采样胶帽',
+                name:'TA/Tenax采样管',
                 imgMain:require('@/assets/img/goodsCenter/cyg/2.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg'
                 ]
             },
             {
                 id:3,
-                name:'不锈钢采样四氟帽',
+                name:'组合一/组合二/组合三',
                 imgMain:require('@/assets/img/goodsCenter/cyg/3.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E4%B8%8D%E9%94%88%E9%92%A2%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg'
                 ]
             },
             {
@@ -158,7 +286,14 @@ export const goodsList =[
                 name:'除臭氧小柱',
                 imgMain:require('@/assets/img/goodsCenter/cyg/4.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg',
                 ]
             },
             {
@@ -166,7 +301,14 @@ export const goodsList =[
                 name:'硅胶采样管热解析型',
                 imgMain:require('@/assets/img/goodsCenter/cyg/5.jpg'),
                 imgDetails:[
-
+                   'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                   'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                   'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                   'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                   'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                   'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                   'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                   'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg',
                 ]
             },
             {
@@ -174,7 +316,14 @@ export const goodsList =[
                 name:'硅胶采样管溶剂解析型',
                 imgMain:require('@/assets/img/goodsCenter/cyg/6.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E7%A1%85%E8%83%B6%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg',
                 ]
             },
             {
@@ -182,7 +331,14 @@ export const goodsList =[
                 name:'活性炭玻璃采样管',
                 imgMain:require('@/assets/img/goodsCenter/cyg/7.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E6%B4%BB%E6%80%A7%E7%82%AD%E7%8E%BB%E7%92%83%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E6%B4%BB%E6%80%A7%E7%82%AD%E7%8E%BB%E7%92%83%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E6%B4%BB%E6%80%A7%E7%82%AD%E7%8E%BB%E7%92%83%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E6%B4%BB%E6%80%A7%E7%82%AD%E7%8E%BB%E7%92%83%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E6%B4%BB%E6%80%A7%E7%82%AD%E7%8E%BB%E7%92%83%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E6%B4%BB%E6%80%A7%E7%82%AD%E7%8E%BB%E7%92%83%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E6%B4%BB%E6%80%A7%E7%82%AD%E7%8E%BB%E7%92%83%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E6%B4%BB%E6%80%A7%E7%82%AD%E7%8E%BB%E7%92%83%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg',
                 ]
             },
             {
@@ -190,7 +346,14 @@ export const goodsList =[
                 name:'巯基棉采样管',
                 imgMain:require('@/assets/img/goodsCenter/cyg/8.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E5%B7%AF%E5%9F%BA%E6%A3%89%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E5%B7%AF%E5%9F%BA%E6%A3%89%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E5%B7%AF%E5%9F%BA%E6%A3%89%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E5%B7%AF%E5%9F%BA%E6%A3%89%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E5%B7%AF%E5%9F%BA%E6%A3%89%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E5%B7%AF%E5%9F%BA%E6%A3%89%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E5%B7%AF%E5%9F%BA%E6%A3%89%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/%E5%B7%AF%E5%9F%BA%E6%A3%89%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg',
                 ]
             },
             {
@@ -198,7 +361,15 @@ export const goodsList =[
                 name:'DNPH采样管',
                 imgMain:require('@/assets/img/goodsCenter/cyg/9.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%94%E4%BD%93%E9%87%87%E6%A0%B7%E7%AE%A1/DNPH%E9%87%87%E6%A0%B7%E7%AE%A1/8008.jpg',
+                    
                 ]
             },
         ]
@@ -212,7 +383,14 @@ export const goodsList =[
                 name:'玻璃纤维滤膜',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/1.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8008.jpg',
                 ]
             },
             {
@@ -220,6 +398,14 @@ export const goodsList =[
                 name:'玻璃纤维无胶滤筒',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/2.jpg'),
                 imgDetails:[
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%97%A0%E8%83%B6%E6%BB%A4%E7%AD%92/8001.jpg',
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%97%A0%E8%83%B6%E6%BB%A4%E7%AD%92/8002.jpg',
+                      'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%97%A0%E8%83%B6%E6%BB%A4%E7%AD%92/8003.jpg',
+                       'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%97%A0%E8%83%B6%E6%BB%A4%E7%AD%92/8004.jpg',
+                        'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%97%A0%E8%83%B6%E6%BB%A4%E7%AD%92/8005.jpg',
+                         'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%97%A0%E8%83%B6%E6%BB%A4%E7%AD%92/8006.jpg',
+                          'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%97%A0%E8%83%B6%E6%BB%A4%E7%AD%92/8007.jpg',
+                           'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%8E%BB%E7%92%83%E7%BA%A4%E7%BB%B4%E6%97%A0%E8%83%B6%E6%BB%A4%E7%AD%92/8008.jpg',
 
                 ]
             },
@@ -228,7 +414,14 @@ export const goodsList =[
                 name:'过氯乙烯滤膜',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/3.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E8%BF%87%E6%B0%AF%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E8%BF%87%E6%B0%AF%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E8%BF%87%E6%B0%AF%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E8%BF%87%E6%B0%AF%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E8%BF%87%E6%B0%AF%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E8%BF%87%E6%B0%AF%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E8%BF%87%E6%B0%AF%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E8%BF%87%E6%B0%AF%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8008.jpg',
                 ]
             },
             {
@@ -236,7 +429,14 @@ export const goodsList =[
                 name:'加厚玻璃纤维滤膜',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/4.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E5%8A%A0%E5%8E%9A%E7%8E%BB%E7%92%83%E9%92%8E%E7%BB%B4%E6%BB%A4%E8%86%9C/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E5%8A%A0%E5%8E%9A%E7%8E%BB%E7%92%83%E9%92%8E%E7%BB%B4%E6%BB%A4%E8%86%9C/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E5%8A%A0%E5%8E%9A%E7%8E%BB%E7%92%83%E9%92%8E%E7%BB%B4%E6%BB%A4%E8%86%9C/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E5%8A%A0%E5%8E%9A%E7%8E%BB%E7%92%83%E9%92%8E%E7%BB%B4%E6%BB%A4%E8%86%9C/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E5%8A%A0%E5%8E%9A%E7%8E%BB%E7%92%83%E9%92%8E%E7%BB%B4%E6%BB%A4%E8%86%9C/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E5%8A%A0%E5%8E%9A%E7%8E%BB%E7%92%83%E9%92%8E%E7%BB%B4%E6%BB%A4%E8%86%9C/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E5%8A%A0%E5%8E%9A%E7%8E%BB%E7%92%83%E9%92%8E%E7%BB%B4%E6%BB%A4%E8%86%9C/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E5%8A%A0%E5%8E%9A%E7%8E%BB%E7%92%83%E9%92%8E%E7%BB%B4%E6%BB%A4%E8%86%9C/8008.jpg',
                 ]
             },
             {
@@ -244,7 +444,14 @@ export const goodsList =[
                 name:'聚四氟乙烯滤膜',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/5.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/PTFE%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8001.jpg',
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/PTFE%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8002.jpg',
+                      'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/PTFE%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8003.jpg',
+                       'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/PTFE%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8004.jpg',
+                        'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/PTFE%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8005.jpg',
+                         'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/PTFE%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8006.jpg',
+                          'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/PTFE%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8007.jpg',
+                           'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/PTFE%E4%B9%99%E7%83%AF%E6%BB%A4%E8%86%9C/8008.jpg',
                 ]
             },
             {
@@ -252,7 +459,14 @@ export const goodsList =[
                 name:'石英滤膜',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/6.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E8%86%9C/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E8%86%9C/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E8%86%9C/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E8%86%9C/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E8%86%9C/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E8%86%9C/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E8%86%9C/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E8%86%9C/8008.jpg',
                 ]
             },
             {
@@ -260,7 +474,14 @@ export const goodsList =[
                 name:'石英滤筒',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/7.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E7%AD%92/8001.jpg',
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E7%AD%92/8002.jpg',
+                      'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E7%AD%92/8003.jpg',
+                       'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E7%AD%92/8004.jpg',
+                        'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E7%AD%92/8005.jpg',
+                         'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E7%AD%92/8006.jpg',
+                          'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E7%AD%92/8007.jpg',
+                           'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E7%9F%B3%E8%8B%B1%E6%BB%A4%E7%AD%92/8008.jpg',
                 ]
             },
             {
@@ -268,7 +489,14 @@ export const goodsList =[
                 name:'乙酸硝酸纤维滤膜',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/8.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E4%B9%99%E9%85%B8%E7%A1%9D%E9%85%B8%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E4%B9%99%E9%85%B8%E7%A1%9D%E9%85%B8%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E4%B9%99%E9%85%B8%E7%A1%9D%E9%85%B8%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E4%B9%99%E9%85%B8%E7%A1%9D%E9%85%B8%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E4%B9%99%E9%85%B8%E7%A1%9D%E9%85%B8%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E4%B9%99%E9%85%B8%E7%A1%9D%E9%85%B8%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E4%B9%99%E9%85%B8%E7%A1%9D%E9%85%B8%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E4%B9%99%E9%85%B8%E7%A1%9D%E9%85%B8%E7%BA%A4%E7%BB%B4%E6%BB%A4%E8%86%9C/8008.jpg',
                 ]
             },
             {
@@ -276,7 +504,16 @@ export const goodsList =[
                 name:'针式滤器',
                 imgMain:require('@/assets/img/goodsCenter/ltlm/9.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E9%92%88%E5%BC%8F%E6%BB%A4%E5%99%A8/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E9%92%88%E5%BC%8F%E6%BB%A4%E5%99%A8/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E9%92%88%E5%BC%8F%E6%BB%A4%E5%99%A8/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E9%92%88%E5%BC%8F%E6%BB%A4%E5%99%A8/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E9%92%88%E5%BC%8F%E6%BB%A4%E5%99%A8/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E9%92%88%E5%BC%8F%E6%BB%A4%E5%99%A8/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E9%92%88%E5%BC%8F%E6%BB%A4%E5%99%A8/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%BB%A4%E7%AD%92%E6%BB%A4%E8%86%9C/%E9%92%88%E5%BC%8F%E6%BB%A4%E5%99%A8/8008.jpg',
+                    
+                    
                 ]
             },
         ]
@@ -290,7 +527,14 @@ export const goodsList =[
                 name:'贝勒管采水器',
                 imgMain:require('@/assets/img/goodsCenter/szcy/1.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8008.jpg',
                 ]
             },
             {
@@ -298,7 +542,14 @@ export const goodsList =[
                 name:'低流量头',
                 imgMain:require('@/assets/img/goodsCenter/szcy/2.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8008.jpg',
                 ]
             },
             {
@@ -306,7 +557,14 @@ export const goodsList =[
                 name:'节流阀门',
                 imgMain:require('@/assets/img/goodsCenter/szcy/3.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E8%B4%9D%E5%8B%92%E7%AE%A1%E9%87%87%E6%B0%B4%E5%99%A8/8008.jpg',
                 ]
             },
             {
@@ -314,7 +572,15 @@ export const goodsList =[
                 name:'水质快速检测包',
                 imgMain:require('@/assets/img/goodsCenter/szcy/4.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%B0%B4%E8%B4%A8%E5%BF%AB%E9%80%9F%E6%A3%80%E6%B5%8B%E5%8C%85/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%B0%B4%E8%B4%A8%E5%BF%AB%E9%80%9F%E6%A3%80%E6%B5%8B%E5%8C%85/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%B0%B4%E8%B4%A8%E5%BF%AB%E9%80%9F%E6%A3%80%E6%B5%8B%E5%8C%85/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%B0%B4%E8%B4%A8%E5%BF%AB%E9%80%9F%E6%A3%80%E6%B5%8B%E5%8C%85/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%B0%B4%E8%B4%A8%E5%BF%AB%E9%80%9F%E6%A3%80%E6%B5%8B%E5%8C%85/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%B0%B4%E8%B4%A8%E5%BF%AB%E9%80%9F%E6%A3%80%E6%B5%8B%E5%8C%85/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%B0%B4%E8%B4%A8%E5%BF%AB%E9%80%9F%E6%A3%80%E6%B5%8B%E5%8C%85/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%B0%B4%E8%B4%A8%E5%BF%AB%E9%80%9F%E6%A3%80%E6%B5%8B%E5%8C%85/8008.jpg',
+                    
                 ]
             },
             {
@@ -322,6 +588,14 @@ export const goodsList =[
                 name:'无菌采水袋',
                 imgMain:require('@/assets/img/goodsCenter/szcy/5.jpg'),
                 imgDetails:[
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%97%A0%E8%8F%8C%E6%B0%B4%E6%A0%B7%E8%A2%8B/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%97%A0%E8%8F%8C%E6%B0%B4%E6%A0%B7%E8%A2%8B/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%97%A0%E8%8F%8C%E6%B0%B4%E6%A0%B7%E8%A2%8B/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%97%A0%E8%8F%8C%E6%B0%B4%E6%A0%B7%E8%A2%8B/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%97%A0%E8%8F%8C%E6%B0%B4%E6%A0%B7%E8%A2%8B/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%97%A0%E8%8F%8C%E6%B0%B4%E6%A0%B7%E8%A2%8B/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%97%A0%E8%8F%8C%E6%B0%B4%E6%A0%B7%E8%A2%8B/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E6%B0%B4%E8%B4%A8%E9%87%87%E6%A0%B7/%E6%97%A0%E8%8F%8C%E6%B0%B4%E6%A0%B7%E8%A2%8B/8008.jpg',
 
                 ]
             },
@@ -336,7 +610,14 @@ export const goodsList =[
                 name:'40ml吹扫瓶',
                 imgMain:require('@/assets/img/goodsCenter/trcy/1.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8001.jpg',
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8002.jpg',
+                      'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8003.jpg',
+                       'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8004.jpg',
+                        'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8005.jpg',
+                         'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8006.jpg',
+                          'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8007.jpg',
+                           'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8008.jpg',
                 ]
             },
             {
@@ -344,7 +625,14 @@ export const goodsList =[
                 name:'250ml土壤样品瓶',
                 imgMain:require('@/assets/img/goodsCenter/trcy/2.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8001.jpg',
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8002.jpg',
+                      'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8003.jpg',
+                       'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8004.jpg',
+                        'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8005.jpg',
+                         'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8006.jpg',
+                          'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8007.jpg',
+                           'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8008.jpg',
                 ]
             },
             {
@@ -352,7 +640,14 @@ export const goodsList =[
                 name:'吹扫瓶垫片',
                 imgMain:require('@/assets/img/goodsCenter/trcy/3.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8001.jpg',
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8002.jpg',
+                      'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8003.jpg',
+                       'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8004.jpg',
+                        'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8005.jpg',
+                         'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8006.jpg',
+                          'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8007.jpg',
+                           'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E5%90%B9%E6%89%AB%E7%93%B6%E5%9E%AB%E7%89%87/8008.jpg',
                 ]
             },
             {
@@ -360,7 +655,14 @@ export const goodsList =[
                 name:'土壤采样管',
                 imgMain:require('@/assets/img/goodsCenter/trcy/4.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8008.jpg',
                 ]
             },
             {
@@ -368,7 +670,14 @@ export const goodsList =[
                 name:'土壤采样手柄',
                 imgMain:require('@/assets/img/goodsCenter/trcy/5.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E5%9C%9F%E5%9B%8A%E9%87%87%E6%A0%B7/%E9%9D%9E%E6%89%B0%E5%8A%A8%E5%9C%9F%E5%A3%A4%E9%87%87%E6%A0%B7%E5%99%A8/8008.jpg',
                 ]
             },
         ]
@@ -382,7 +691,14 @@ export const goodsList =[
                 name:'不锈钢托网',
                 imgMain:require('@/assets/img/goodsCenter/dld/1.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8008.jpg',
                 ]
             },
             {
@@ -390,7 +706,14 @@ export const goodsList =[
                 name:'采样头存放瓶',
                 imgMain:require('@/assets/img/goodsCenter/dld/2.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E9%87%87%E6%A0%B7%E5%A4%B4%E5%AD%98%E6%94%BE%E7%93%B6/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E9%87%87%E6%A0%B7%E5%A4%B4%E5%AD%98%E6%94%BE%E7%93%B6/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E9%87%87%E6%A0%B7%E5%A4%B4%E5%AD%98%E6%94%BE%E7%93%B6/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E9%87%87%E6%A0%B7%E5%A4%B4%E5%AD%98%E6%94%BE%E7%93%B6/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E9%87%87%E6%A0%B7%E5%A4%B4%E5%AD%98%E6%94%BE%E7%93%B6/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E9%87%87%E6%A0%B7%E5%A4%B4%E5%AD%98%E6%94%BE%E7%93%B6/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E9%87%87%E6%A0%B7%E5%A4%B4%E5%AD%98%E6%94%BE%E7%93%B6/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E9%87%87%E6%A0%B7%E5%A4%B4%E5%AD%98%E6%94%BE%E7%93%B6/8008.jpg',
                 ]
             },
             {
@@ -398,7 +721,14 @@ export const goodsList =[
                 name:'铝圈',
                 imgMain:require('@/assets/img/goodsCenter/dld/3.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8008.jpg',
                 ]
             },
             {
@@ -406,7 +736,14 @@ export const goodsList =[
                 name:'烟尘采样头',
                 imgMain:require('@/assets/img/goodsCenter/dld/4.jpg'),
                 imgDetails:[
-
+                     'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BD%8E%E6%B5%93%E9%A2%97%E7%B2%92%E7%89%A9%E9%87%87%E6%A0%B7/%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E9%87%87%E6%A0%B7%E5%A4%B4%2B%E6%89%98%E7%BD%91/8008.jpg',
                 ]
             }
        
@@ -421,7 +758,14 @@ export const goodsList =[
                 name:'10L采气泵',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/1.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8008.jpg',
                 ]
             },
             {
@@ -429,7 +773,14 @@ export const goodsList =[
                 name:'臭气采样桶',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/2.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%87%AD%E6%B0%94%E9%87%87%E6%A0%B7%E6%A1%B6/8008.jpg',
                 ]
             },
             {
@@ -437,7 +788,14 @@ export const goodsList =[
                 name:'岛津GC-MS灯丝国产替代',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/3.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%97%A5%E6%9C%AC%E5%B2%9B%E6%B4%A5%E7%81%AF%E4%B8%9D%EF%BC%88%E5%A4%A7%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%97%A5%E6%9C%AC%E5%B2%9B%E6%B4%A5%E7%81%AF%E4%B8%9D%EF%BC%88%E5%A4%A7%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%97%A5%E6%9C%AC%E5%B2%9B%E6%B4%A5%E7%81%AF%E4%B8%9D%EF%BC%88%E5%A4%A7%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%97%A5%E6%9C%AC%E5%B2%9B%E6%B4%A5%E7%81%AF%E4%B8%9D%EF%BC%88%E5%A4%A7%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%97%A5%E6%9C%AC%E5%B2%9B%E6%B4%A5%E7%81%AF%E4%B8%9D%EF%BC%88%E5%A4%A7%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%97%A5%E6%9C%AC%E5%B2%9B%E6%B4%A5%E7%81%AF%E4%B8%9D%EF%BC%88%E5%A4%A7%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%97%A5%E6%9C%AC%E5%B2%9B%E6%B4%A5%E7%81%AF%E4%B8%9D%EF%BC%88%E5%A4%A7%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%97%A5%E6%9C%AC%E5%B2%9B%E6%B4%A5%E7%81%AF%E4%B8%9D%EF%BC%88%E5%A4%A7%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8008.jpg',
                 ]
             },
             {
@@ -445,6 +803,14 @@ export const goodsList =[
                 name:'废气综合采样抢',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/4.jpg'),
                 imgDetails:[
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%BA%9F%E6%B0%94%E7%BB%BC%E5%90%88%E9%87%87%E6%A0%B7%E6%8A%A2/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%BA%9F%E6%B0%94%E7%BB%BC%E5%90%88%E9%87%87%E6%A0%B7%E6%8A%A2/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%BA%9F%E6%B0%94%E7%BB%BC%E5%90%88%E9%87%87%E6%A0%B7%E6%8A%A2/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%BA%9F%E6%B0%94%E7%BB%BC%E5%90%88%E9%87%87%E6%A0%B7%E6%8A%A2/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%BA%9F%E6%B0%94%E7%BB%BC%E5%90%88%E9%87%87%E6%A0%B7%E6%8A%A2/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%BA%9F%E6%B0%94%E7%BB%BC%E5%90%88%E9%87%87%E6%A0%B7%E6%8A%A2/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%BA%9F%E6%B0%94%E7%BB%BC%E5%90%88%E9%87%87%E6%A0%B7%E6%8A%A2/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%BA%9F%E6%B0%94%E7%BB%BC%E5%90%88%E9%87%87%E6%A0%B7%E6%8A%A2/8008.jpg',
 
                 ]
             },
@@ -453,7 +819,14 @@ export const goodsList =[
                 name:'高低浓度烟尘烟多功能采样枪',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/5.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E9%AB%98%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E7%83%9F%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%87%87%E6%A0%B7%E6%9E%AA/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E9%AB%98%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E7%83%9F%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%87%87%E6%A0%B7%E6%9E%AA/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E9%AB%98%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E7%83%9F%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%87%87%E6%A0%B7%E6%9E%AA/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E9%AB%98%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E7%83%9F%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%87%87%E6%A0%B7%E6%9E%AA/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E9%AB%98%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E7%83%9F%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%87%87%E6%A0%B7%E6%9E%AA/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E9%AB%98%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E7%83%9F%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%87%87%E6%A0%B7%E6%9E%AA/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E9%AB%98%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E7%83%9F%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%87%87%E6%A0%B7%E6%9E%AA/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E9%AB%98%E4%BD%8E%E6%B5%93%E5%BA%A6%E7%83%9F%E5%B0%98%E7%83%9F%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%87%87%E6%A0%B7%E6%9E%AA/8008.jpg',
                 ]
             },
             {
@@ -461,7 +834,14 @@ export const goodsList =[
                 name:'加热烟气采样抢',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/6.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8A%A0%E7%83%AD%E7%83%9F%E6%B0%94%E9%87%87%E6%A0%B7%E6%8A%A2/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8A%A0%E7%83%AD%E7%83%9F%E6%B0%94%E9%87%87%E6%A0%B7%E6%8A%A2/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8A%A0%E7%83%AD%E7%83%9F%E6%B0%94%E9%87%87%E6%A0%B7%E6%8A%A2/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8A%A0%E7%83%AD%E7%83%9F%E6%B0%94%E9%87%87%E6%A0%B7%E6%8A%A2/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8A%A0%E7%83%AD%E7%83%9F%E6%B0%94%E9%87%87%E6%A0%B7%E6%8A%A2/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8A%A0%E7%83%AD%E7%83%9F%E6%B0%94%E9%87%87%E6%A0%B7%E6%8A%A2/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8A%A0%E7%83%AD%E7%83%9F%E6%B0%94%E9%87%87%E6%A0%B7%E6%8A%A2/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8A%A0%E7%83%AD%E7%83%9F%E6%B0%94%E9%87%87%E6%A0%B7%E6%8A%A2/8008.jpg',
                 ]
             },
             {
@@ -469,7 +849,14 @@ export const goodsList =[
                 name:'沥青烟采样枪',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/7.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%A5%E9%9D%92%E7%83%9F%E9%87%87%E6%A0%B7%E6%9E%AA/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%A5%E9%9D%92%E7%83%9F%E9%87%87%E6%A0%B7%E6%9E%AA/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%A5%E9%9D%92%E7%83%9F%E9%87%87%E6%A0%B7%E6%9E%AA/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%A5%E9%9D%92%E7%83%9F%E9%87%87%E6%A0%B7%E6%9E%AA/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%A5%E9%9D%92%E7%83%9F%E9%87%87%E6%A0%B7%E6%9E%AA/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%A5%E9%9D%92%E7%83%9F%E9%87%87%E6%A0%B7%E6%9E%AA/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%A5%E9%9D%92%E7%83%9F%E9%87%87%E6%A0%B7%E6%9E%AA/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%A5%E9%9D%92%E7%83%9F%E9%87%87%E6%A0%B7%E6%9E%AA/8008.jpg',
                 ]
             },
             {
@@ -477,7 +864,14 @@ export const goodsList =[
                 name:'全自动采样器',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/8.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%85%A8%E8%87%AA%E5%8A%A8%E9%87%87%E6%A0%B7%E5%99%A8/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%85%A8%E8%87%AA%E5%8A%A8%E9%87%87%E6%A0%B7%E5%99%A8/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%85%A8%E8%87%AA%E5%8A%A8%E9%87%87%E6%A0%B7%E5%99%A8/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%85%A8%E8%87%AA%E5%8A%A8%E9%87%87%E6%A0%B7%E5%99%A8/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%85%A8%E8%87%AA%E5%8A%A8%E9%87%87%E6%A0%B7%E5%99%A8/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%85%A8%E8%87%AA%E5%8A%A8%E9%87%87%E6%A0%B7%E5%99%A8/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%85%A8%E8%87%AA%E5%8A%A8%E9%87%87%E6%A0%B7%E5%99%A8/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%85%A8%E8%87%AA%E5%8A%A8%E9%87%87%E6%A0%B7%E5%99%A8/8008.jpg',
                 ]
             },
             {
@@ -485,7 +879,11 @@ export const goodsList =[
                 name:'软胶管',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/9.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%BD%AF%E8%83%B6%E7%AE%A1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%BD%AF%E8%83%B6%E7%AE%A1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%BD%AF%E8%83%B6%E7%AE%A1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%BD%AF%E8%83%B6%E7%AE%A1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%BD%AF%E8%83%B6%E7%AE%A1/8005.jpg',
                 ]
             },
             {
@@ -493,7 +891,14 @@ export const goodsList =[
                 name:'色谱瓶-GC进样瓶',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/10.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%89%B2%E8%B0%B1%E7%93%B6%20GC%E8%BF%9B%E6%A0%B7%E7%93%B6%E4%B8%8E%E7%9B%96%E5%9E%AB/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%89%B2%E8%B0%B1%E7%93%B6%20GC%E8%BF%9B%E6%A0%B7%E7%93%B6%E4%B8%8E%E7%9B%96%E5%9E%AB/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%89%B2%E8%B0%B1%E7%93%B6%20GC%E8%BF%9B%E6%A0%B7%E7%93%B6%E4%B8%8E%E7%9B%96%E5%9E%AB/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%89%B2%E8%B0%B1%E7%93%B6%20GC%E8%BF%9B%E6%A0%B7%E7%93%B6%E4%B8%8E%E7%9B%96%E5%9E%AB/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%89%B2%E8%B0%B1%E7%93%B6%20GC%E8%BF%9B%E6%A0%B7%E7%93%B6%E4%B8%8E%E7%9B%96%E5%9E%AB/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%89%B2%E8%B0%B1%E7%93%B6%20GC%E8%BF%9B%E6%A0%B7%E7%93%B6%E4%B8%8E%E7%9B%96%E5%9E%AB/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%89%B2%E8%B0%B1%E7%93%B6%20GC%E8%BF%9B%E6%A0%B7%E7%93%B6%E4%B8%8E%E7%9B%96%E5%9E%AB/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E8%89%B2%E8%B0%B1%E7%93%B6%20GC%E8%BF%9B%E6%A0%B7%E7%93%B6%E4%B8%8E%E7%9B%96%E5%9E%AB/8008.jpg',
                 ]
             },
             {
@@ -501,7 +906,14 @@ export const goodsList =[
                 name:'压膜机',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/11.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8E%8B%E8%86%9C%E6%9C%BA/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8E%8B%E8%86%9C%E6%9C%BA/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8E%8B%E8%86%9C%E6%9C%BA/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8E%8B%E8%86%9C%E6%9C%BA/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8E%8B%E8%86%9C%E6%9C%BA/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8E%8B%E8%86%9C%E6%9C%BA/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8E%8B%E8%86%9C%E6%9C%BA/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E5%8E%8B%E8%86%9C%E6%9C%BA/8008.jpg',
                 ]
             },
             {
@@ -509,7 +921,14 @@ export const goodsList =[
                 name:'烟气预处理器',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/12.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%83%9F%E6%B0%94%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%83%9F%E6%B0%94%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%83%9F%E6%B0%94%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%83%9F%E6%B0%94%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%83%9F%E6%B0%94%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%83%9F%E6%B0%94%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%83%9F%E6%B0%94%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%83%9F%E6%B0%94%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/8008.jpg',
                 ]
             },
             {
@@ -517,7 +936,14 @@ export const goodsList =[
                 name:'油烟取样枪',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/13.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%B9%E7%83%9F%E5%8F%96%E6%A0%B7%E6%9E%AA/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%B9%E7%83%9F%E5%8F%96%E6%A0%B7%E6%9E%AA/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%B9%E7%83%9F%E5%8F%96%E6%A0%B7%E6%9E%AA/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%B9%E7%83%9F%E5%8F%96%E6%A0%B7%E6%9E%AA/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%B9%E7%83%9F%E5%8F%96%E6%A0%B7%E6%9E%AA/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%B9%E7%83%9F%E5%8F%96%E6%A0%B7%E6%9E%AA/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%B9%E7%83%9F%E5%8F%96%E6%A0%B7%E6%9E%AA/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E6%B2%B9%E7%83%9F%E5%8F%96%E6%A0%B7%E6%9E%AA/8008.jpg',
                 ]
             },
             {
@@ -525,7 +951,14 @@ export const goodsList =[
                 name:'真空采样箱',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/14.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%9C%9F%E7%A9%BA%E9%87%87%E6%B0%94%E7%AE%B1/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%9C%9F%E7%A9%BA%E9%87%87%E6%B0%94%E7%AE%B1/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%9C%9F%E7%A9%BA%E9%87%87%E6%B0%94%E7%AE%B1/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%9C%9F%E7%A9%BA%E9%87%87%E6%B0%94%E7%AE%B1/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%9C%9F%E7%A9%BA%E9%87%87%E6%B0%94%E7%AE%B1/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%9C%9F%E7%A9%BA%E9%87%87%E6%B0%94%E7%AE%B1/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%9C%9F%E7%A9%BA%E9%87%87%E6%B0%94%E7%AE%B1/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%9C%9F%E7%A9%BA%E9%87%87%E6%B0%94%E7%AE%B1/8008.jpg',
                 ]
             },
             {
@@ -533,7 +966,14 @@ export const goodsList =[
                 name:'Agilent安捷伦国产替代灯丝',
                 imgMain:require('@/assets/img/goodsCenter/yqpj/15.jpg'),
                 imgDetails:[
-
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%BE%8E%E5%9B%BD%E5%AE%89%E6%8D%B7%E4%BC%A6%E7%81%AF%E4%B8%9D%EF%BC%88%E5%B0%8F%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8001.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%BE%8E%E5%9B%BD%E5%AE%89%E6%8D%B7%E4%BC%A6%E7%81%AF%E4%B8%9D%EF%BC%88%E5%B0%8F%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8002.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%BE%8E%E5%9B%BD%E5%AE%89%E6%8D%B7%E4%BC%A6%E7%81%AF%E4%B8%9D%EF%BC%88%E5%B0%8F%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8003.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%BE%8E%E5%9B%BD%E5%AE%89%E6%8D%B7%E4%BC%A6%E7%81%AF%E4%B8%9D%EF%BC%88%E5%B0%8F%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8004.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%BE%8E%E5%9B%BD%E5%AE%89%E6%8D%B7%E4%BC%A6%E7%81%AF%E4%B8%9D%EF%BC%88%E5%B0%8F%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8005.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%BE%8E%E5%9B%BD%E5%AE%89%E6%8D%B7%E4%BC%A6%E7%81%AF%E4%B8%9D%EF%BC%88%E5%B0%8F%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8006.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%BE%8E%E5%9B%BD%E5%AE%89%E6%8D%B7%E4%BC%A6%E7%81%AF%E4%B8%9D%EF%BC%88%E5%B0%8F%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8007.jpg',
+                    'http://sz7zoy9bz.hn-bkt.clouddn.com/%E4%BB%AA%E5%99%A8%E9%85%8D%E4%BB%B6/%E7%BE%8E%E5%9B%BD%E5%AE%89%E6%8D%B7%E4%BC%A6%E7%81%AF%E4%B8%9D%EF%BC%88%E5%B0%8F%E6%96%B9%E7%9B%92%E5%AD%90%EF%BC%89/8008.jpg',
                 ]
             }
         ]
