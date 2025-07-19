@@ -17,7 +17,7 @@
                     <div style="width: 684px;display: flex;justify-content: flex-start;align-content: flex-start;flex-wrap: wrap;gap: 18px;">
                     <img  style="width: 156px;height: 156px;"
                         v-for="(item,index) in detailsInfo.imgDetails" :key="index"
-                        @click="checkImg(item)"
+                        @mouseenter="checkImg(item)"
                         :class="{checkImg:checkImgUrl == item}"
                         :src="item">
                      </div>

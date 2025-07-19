@@ -51,7 +51,7 @@
       <div style="width: 100%;display: flex; justify-content: center;font-size: 16px;color: #999999;">
          <div class="card-shadow" style="width: 1400px;height: 560px;background-color: #ffffff;border-bottom-left-radius: 18px;border-bottom-right-radius: 18px;border-top-right-radius: 18px;padding: 54px 74px;">
            <div v-if="checkIntro == 1">
-              <div>我公司是一家集研发、制造、销售为一体的实验室仪器及耗材生产厂商，产品包括:气体采样袋、采样管、采样瓶、滤简滤膜、针式滤器、玻璃器皿、防护用品、标准品试剂设备配件、色谱耗材、前处理耗材等:提供高品质、短交期、高性价比的一站式服务。</div>
+              <div>我公司是一家集研发、制造、销售为一体的实验室仪器及耗材生产厂商，产品包括:气体采样袋、采样管、采样瓶、滤筒滤膜、针式滤器、玻璃器皿、防护用品、标准品试剂设备配件、色谱耗材、前处理耗材等:提供高品质、短交期、高性价比的一站式服务。</div>
             <div style="padding-top: 48px;">
               <div>
                 1.自主研发与品质控制
@@ -96,9 +96,9 @@
                     <div style="font-size: 18px;color: #333333;font-size: 18px;">点击图标打开店铺</div>
               </div>
               <div style="width: 100%;height: 320px;display: flex;justify-content: space-between;align-items: center;padding: 80px;">
-                <div v-for="(item, index) in logos" :key="index" >
+                <div class="logsItem" v-for="(item, index) in logos" :key="index" >
                     <img  :src="item.logo" @click="goStore(item.path)" style="width: 80px;height: 80px;">
-                    <div style="width: 100%;height: 60px;display: flex;justify-content: center;align-items: center;color: #333333;">
+                    <div class="logsTitle" style="width: 100%;height: 60px;display: flex;justify-content: center;align-items: center;">
                       <div>
                         {{ item.title }}
                       </div>
@@ -187,7 +187,7 @@
         </div>
       </div>
       <div style="width: 100%;height: 463px;padding: 86px 260px 140px 260px;display: flex;justify-content: space-between;">
-          <div v-for="(item,index) in serverList" :key="index" style="width: 300px;height: 377px;border: 1px solid #999999;"  :class="serveType == index ?'serveLists' : 'serveList'"  @mouseover="serveType = index" @mouseleave="serveType = 9">
+          <div v-for="(item,index) in serverList" :key="index" style="width: 300px;height: 377px;border: 1px solid #999999;"  :class="serveType == index ?'serveLists' : 'serveList'"  @mouseover="serveType = index" @mouseleave="serveType = 9" @click="go(item.path,index)">
             <div style="width: 300px;padding-top: 78px;display: flex;justify-content: center;">
                 <img v-if="serveType == index" :src="item.logos" style="width: 48px;height: 48px;">
                  <img v-else :src="item.logo" style="width: 48px;height: 48px;">
@@ -215,13 +215,13 @@
             <div style="width: 100%;height: 1200px; padding-top: 86px;display: flex">
               <div>
                  <div v-for="(item , index) in productTypes" :key="index"
-                   @click="typeSelected = index "
+                   @mouseenter="typeSelected = index "
                   :class="typeSelected == index ? 'product productTextSelected':'product productText'" >
                    <div>{{ item }}</div>
                 </div>
               </div>
               <div style="width: 1300px;height: 900px; display: flex; flex-wrap: wrap;padding-left: 100px;overflow: auto;align-content: flex-start;gap: 18px;">
-                    <div v-for="(item , index ) in goodsList[typeSelected].goods" :key="index" style="width: 205px;height: 265px;margin-bottom: 20px;margin-left: 20px;">
+                    <div class="productItem" v-for="(item , index ) in goodsList[typeSelected].goods" :key="index" style="width: 205px;height: 265px;margin-bottom: 20px;margin-left: 20px;">
                         <img @click="goDetails(item)" :src="item.imgMain" style="width: 205px;height: 205px;">
                         <div style="width: 205px;height: 60px;display: flex;justify-content: center;align-items: center;font-size: 16px;color: #999999;">
                               <div>{{ item.name }}</div>
@@ -276,21 +276,24 @@ export default {
           logos: require("@/assets/img/home/zxs.png"),
           title: "工厂直销",
           content1: "我们是厂家直销",
-          content2: "品质更好，价格更优"
+          content2: "品质更好，价格更优",
+          path:'/aboutUs'
         },
         {
           logo: require("@/assets/img/home/pl.png"),
           logos: require("@/assets/img/home/pls.png"),
           title: "品类齐全",
           content1: "我们共计拥有上千种产品，",
-          content2: "满足客户所有需求"
+          content2: "满足客户所有需求",
+          path:'/productCenter'
         },
         {
           logo: require("@/assets/img/home/dz.png"),
           logos: require("@/assets/img/home/dzs.png"),
           title: "定制化服务",
           content1: "我们可以为客户提供定制化产品",
-          content2: "根据客户需求研发生产"
+          content2: "根据客户需求研发生产",
+          path:'/contact'
         },
         {
           logo: require("@/assets/img/home/wy.png"),
@@ -328,6 +331,19 @@ methods:{
       query: {
         details: JSON.stringify(data)
       }
+    });
+  },
+  go(path,index){
+    if(index== 0){
+       this.$store.commit('setNavType', '关于我们');
+    }else if(index == 1 ){
+      this.$store.commit('setNavType', '产品中心');
+    }else{
+      this.$store.commit('setNavType', '联系我们');
+    }
+   
+    this.$router.push({
+      path: path,
     });
   }
 }
@@ -419,6 +435,14 @@ methods:{
 }
 .serveTitles{
   color: #ffffff;
+}
+.productItem:hover{
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+}
+.logsItem:hover{
+  color: #358dcf;
 }
 </style>
 

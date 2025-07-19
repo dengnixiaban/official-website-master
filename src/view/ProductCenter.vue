@@ -10,7 +10,7 @@
         </div>
         <div class="content">
             <div style="width: 100%;padding: 32px 260px;display: flex;justify-content: flex-start;gap: 36px; flex-wrap: wrap;">
-                <div v-for="(item ,index) in goodsList[goodType].goods" :key="index" style="width: 324px;height: 412px;margin-bottom: 32px;">
+                <div class="productItem" v-for="(item ,index) in goodsList[goodType].goods" :key="index" style="width: 324px;height: 412px;margin-bottom: 32px;">
                     <img :src="item.imgMain" style="width: 324px;height: 324px;">
                     <div style="width: 324px;height: 88px;padding: 10px;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); border: 2px solid #fff;">
                         <div style="font-size: 16px;color: #999999;">
@@ -76,6 +76,11 @@ export default {
     width: 100%;
     height: calc(100vh - 250px);
     overflow-y: auto;
+}
+.productItem:hover{
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
 }
 </style>
 
