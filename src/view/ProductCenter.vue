@@ -9,20 +9,20 @@
             >{{ item.title }}</div>
         </div>
         <div class="content">
-            <div style="width: 100%;padding: 32px 260px;display: flex;justify-content: flex-start;gap: 36px; flex-wrap: wrap;">
+            <div style="width: 100%;padding: 32px 260px 120px 260px;display: flex;justify-content: flex-start;gap: 36px; flex-wrap: wrap;">
                 <div class="productItem" v-for="(item ,index) in goodsList[goodType].goods" :key="index" style="width: 324px;height: 412px;margin-bottom: 32px;">
-                    <img :src="item.imgMain" style="width: 324px;height: 324px;">
+                    <img :src="item.imgMain" style="width: 324px;height: 324px;" @click="goDetails(item)">
                     <div style="width: 324px;height: 88px;padding: 10px;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); border: 2px solid #fff;">
                         <div style="font-size: 16px;color: #999999;">
                             {{ item.name }}
                         </div>
                         <div style="display: flex;padding-top: 10px;" >
-                            <div style="width: 100px;height: 32px;background-color: #358dcf;color: #fff;display: flex;justify-content: center;align-items: center;cursor: pointer;">
+                            <div class="checkDetail" style="width: 100px;height: 32px;display: flex;justify-content: center;align-items: center;cursor: pointer;">
                                 <div @click="goDetails(item)" >
                                     查看详情
                                 </div>
                             </div>
-                            <div style="width: 100px;height: 32px;background-color: #358dcf;color: #fff;margin-left: 12px;display: flex;justify-content: center;align-items: center;cursor: pointer;">
+                            <div class="askDetail"  style="width: 100px;height: 32px;margin-left: 12px;display: flex;justify-content: center;align-items: center;cursor: pointer;">
                                 <div @click="goContact()">立即询盘</div>
                             </div>
                         </div>
@@ -81,6 +81,22 @@ export default {
   background-color: #ffffff;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   transform: scale(1.03);
+}
+.checkDetail{
+    color: #999999;
+    border: 1px solid #999999;
+}
+.askDetail{
+    color: #999999;
+    border: 1px solid #999999;
+}
+.checkDetail:hover{
+    background-color:#358dcf;
+    color: #ffffff;
+}
+.askDetail:hover{
+    background-color:#358dcf;
+    color: #ffffff;
 }
 </style>
 
