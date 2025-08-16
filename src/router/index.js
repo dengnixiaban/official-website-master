@@ -17,6 +17,20 @@ export default new Router({
       }
     },
     {
+      path: '/m-home',
+      name: 'm-home',
+      component: resolve => require(['@/view/mobile/HomePage'], resolve),
+      meta: { title: '广州中检仪达实验器材有限公司' }
+    },
+    {
+      path: '/m-productCenter',
+      name: 'm-productCenter',
+      component: resolve => require(['@/view/mobile/ProductCenter'], resolve),
+      meta: {
+        title: '广州中检仪达实验器材有限公司'
+      },
+    },
+    {
       path: '/productCenter',
       name: 'productCenter',
       component: resolve => require(['@/view/ProductCenter'], resolve),
@@ -28,6 +42,14 @@ export default new Router({
       path: '/productDetails',
       name: 'productDetails',
       component: resolve => require(['@/view/ProductDetails'], resolve),
+      meta: {
+        title: '广州中检仪达实验器材有限公司'
+      },
+    },
+     {
+      path: '/m-productDetails',
+      name: 'm-productDetails',
+      component: resolve => require(['@/view/mobile/ProductDetails'], resolve),
       meta: {
         title: '广州中检仪达实验器材有限公司'
       },
@@ -46,10 +68,27 @@ export default new Router({
       meta: {
         title: '广州中检仪达实验器材有限公司'
       }
-    }, {
+    }, 
+    {
+      path: '/m-contact',
+      name: 'm-contact',
+      component: resolve => require(['@/view/mobile/ContactUs'], resolve),
+      meta: {
+        title: '广州中检仪达实验器材有限公司'
+      }
+    },
+    {
       path: '/aboutUs',
       name: 'aboutUs',
       component: resolve => require(['@/view/AboutUs'], resolve),
+      meta: {
+        title: '广州中检仪达实验器材有限公司'
+      }
+    },
+    {
+      path: '/m-aboutUs',
+      name: 'm-aboutUs',
+      component: resolve => require(['@/view/mobile/AboutUs'], resolve),
       meta: {
         title: '广州中检仪达实验器材有限公司'
       }

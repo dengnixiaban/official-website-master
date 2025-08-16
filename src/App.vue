@@ -1,30 +1,34 @@
 <template>
   <div id="app">
     <Header v-if="!isMob"></Header>
-    <div class="content">
+    <div :class="isMob ? 'contentm' : 'content'">
       <router-view />
     </div>
+
+    <Tabbar v-if="isMob"></Tabbar>
+    
   </div>
 </template>
 
 <script>
+import Tabbar from './components/Tabbar.vue'
 export default {
   name: 'App',
+  components:{
+    Tabbar
+}, 
   data(){
     return {
       isMob:false
     }
   },
   created(){
-    
    this.isMob=navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
-   if(this.$route.path==='/'||this.$route.path==='/moble'){
-    if(this.isMob){
-      this.$router.replace('/moble/cell-mall')
+   if(this.isMob){
+      this.$router.replace('/m-home')
     }else{
       this.$router.replace('/')
     }
-   }
   },
   mounted(){
     this.adjustZoomForLaptop();
@@ -59,4 +63,10 @@ body {
   width: 100%;
   height: 100%;
 }
+.contentm {
+  width: 100%;
+  height: calc(100% - 84px);
+  overflow-y: auto;
+}
+
 </style>
