@@ -11,7 +11,7 @@
                         </div>
                     </div>
                      <div style="width: 100%;display: flex;justify-content: space-between;padding-top: 36px;">
-                        <div style="color:#666666;">京东店铺: 中谐星旗舰店</div>
+                        <div style="color:#666666;">京东店铺: 中谱星旗舰店</div>
                         <div style="width: 80px;height: 30px;display: flex;justify-content: center;align-items: center;cursor: pointer;background-color: #358dcf;">
                           <div  @click="go(logos[2].path)" style="color: #fff;">进入店铺</div>
                         </div>
@@ -37,7 +37,7 @@
                       </div>
                     </div>
                 </div>
-                <img src="../../assets/img/contactus/img1.jpg" style="width: 100%;height: 450px;">
+                <img src="../../assets/img/contactus/img1.jpg" style="width: 100%;">
             </div>
         </div>
         

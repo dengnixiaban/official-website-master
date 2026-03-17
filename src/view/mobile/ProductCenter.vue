@@ -1,23 +1,23 @@
 <template>
   <div class="homepage_m">
-    <div style="padding-top: 48px;background-color:rgba(255, 255, 255, 0.7);">
+    <div class="goodsList" style="background-color:rgba(255, 255, 255);">
         <van-tabs v-model="active" background="transparent" color="#358dcf" title-active-color="#358dcf">
              <van-tab v-for="(item ,index) in goodsList" :key="index" :title="item.title">
-                    <div style="padding: 16px;">
-                        <div style="width: 100%;display: flex;justify-content: center;gap: 18px; flex-wrap: wrap;">
-                                <div class="productItem" v-for="(item ,index) in goodsList[active].goods" :key="index" style="width: 324px;height: 412px;margin-bottom: 32px;">
-                                    <img :src="item.imgMain" style="width: 324px;height: 324px;" @click="goDetails(item)">
-                                    <div style="width: 324px;height: 88px;padding: 10px;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); border: 2px solid #fff;">
-                                        <div style="font-size: 16px;color: #999999;">
+                    <div style="padding: 12px;">
+                        <div style="width: 100%;display: flex;justify-content: space-between;gap: 18px; flex-wrap: wrap;">
+                                <div class="productItem" v-for="(item ,index) in goodsList[active].goods" :key="index" style="width: 45%;">
+                                    <img :src="item.imgMain" style="width: 100%;" @click="goDetails(item)">
+                                    <div style="width: 100%;height: 96px;padding: 10px;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); border: 2px solid #fff;">
+                                        <div style="font-size: 12px;color: #999999;">
                                             {{ item.name }}
                                         </div>
-                                        <div style="display: flex;padding-top: 10px;" >
-                                            <div class="checkDetail" style="width: 100px;height: 32px;display: flex;justify-content: center;align-items: center;cursor: pointer;">
+                                        <div style="display: flex;padding-top: 16px;font-size: 12px;" >
+                                            <div class="checkDetail" style="height: 32px;padding: 4px 6px; display: flex;justify-content: center;align-items: center;cursor: pointer;">
                                                 <div @click="goDetails(item)" >
                                                     查看详情
                                                 </div>
                                             </div>
-                                            <div class="askDetail"  style="width: 100px;height: 32px;margin-left: 12px;display: flex;justify-content: center;align-items: center;cursor: pointer;">
+                                            <div class="askDetail"  style="height: 32px;padding: 4px 6px; margin-left: 10px;display: flex;justify-content: center;align-items: center;cursor: pointer;">
                                                 <div @click="goContact()">立即询盘</div>
                                             </div>
                                         </div>
@@ -55,7 +55,10 @@ export default {
             details: JSON.stringify(data)
         }
         });
-    }
+    },
+      goContact(){
+            this.$router.push('/m-contact');
+        },
 
 }
 };
@@ -63,10 +66,8 @@ export default {
 <style scoped>
 .homepage_m{
   width: 100%;
-  min-height: 100vh;
-  background: url("../../assets/img/home/bg1.jpg") repeat-y;
-  background-size: 100% auto; /* 宽度铺满，高度按比例缩放 */
-  background-position: top center;
+  height: calc(100vh - 48px);
+  overflow-y: auto;
 }
 .check{
     background-color:#1c6ca6 ;
@@ -96,5 +97,8 @@ export default {
 .askDetail:hover{
     background-color:#358dcf;
     color: #ffffff;
+}
+.goodsList{
+
 }
 </style>

@@ -1,15 +1,16 @@
 <template>
     <div class="homepage_m">
-        <div style="padding-top: 48px;background-color:rgba(255, 255, 255, 0.7);">
-            <div style="width: 100%;;display: flex;justify-content:center;gap: 36px;flex-wrap: wrap; ">
-                  <img  style="width: 324px;height: 324px;"
+        <div style="padding:12px;background-color:rgba(255, 255, 255, 0.7);">
+            <img :src="detailsInfo.imgDetails[checkIndex]" style="width: 100%;">
+            <div style="width: 100%;display: flex;justify-content:start;flex-wrap: wrap;gap: 16px;padding-top: 12px;">
+                <img  style="width: 30%;"
                         v-for="(item,index) in detailsInfo.imgDetails" :key="index"
-                        @mouseenter="checkImg(item)"
+                        @click="checkImg(item,index)"
                         :class="{checkImg:checkImgUrl == item}"
                         :src="item">
-                   
             </div>
-            <div style="width: 100%;height: 48px;padding-top: 48px;display: flex;justify-content: center;">
+        
+            <div style="width: 100%;height: 48px;padding-top: 28px;display: flex;justify-content: center;">
                             <div style="width: 144px;height: 48px;display: flex;justify-content: center;align-items: center;background-color: #358dcf;color: #fff;font-size: 18px;cursor: pointer;">
                                 <div @click="goContact()">立即询盘</div>
                             </div>
@@ -30,7 +31,8 @@ export default {
         return{
          goodsList,
          detailsInfo:{},
-         checkImgUrl:''
+         checkImgUrl:'',
+         checkIndex:0
         }
     },
     computed: {
@@ -38,16 +40,11 @@ export default {
   },
     methods:{
         goContact(){
-            this.$router.push('/contact');
+            this.$router.push('/m-contact');
         },
-        checkGoodType(index){
-         this.$store.commit('setGoodType', index);
-         this.$router.push('/productCenter');
-         this.$store.commit('setNavType', '产品中心');
-            
-        },
-        checkImg(url){
+        checkImg(url,index){
             this.checkImgUrl = url 
+            this.checkIndex = index
         },
         goback(){
             this.$router.go(-1); // 返回上一级页面
@@ -74,9 +71,7 @@ export default {
 .homepage_m{
   width: 100%;
   min-height: 100vh;
-  background: url("../../assets/img/home/bg1.jpg") repeat-y;
-  background-size: 100% auto; /* 宽度铺满，高度按比例缩放 */
-  background-position: top center;
+  padding: 0 0 24px 0;
 }
 .checkImg{
     border: 2px solid #358dcf;

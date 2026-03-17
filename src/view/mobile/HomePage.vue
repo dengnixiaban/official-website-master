@@ -1,31 +1,46 @@
 <template>
   <div class="homepage_m">
-    <div style="width: 100%;display: flex;justify-content: center;align-items: center;padding-top:48px;">
-      <img src="../../assets/img/home/logo.png" style="width: 320px;">
+    <div class="infoGx">
+        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+          <img src="../../assets/img/home/logo.png" style="width: 320px;">
+        </div>
+        <div style="color: #333333;display: flex;justify-content: center;">
+          <div>
+            <div style="font-size: 24px;">您的实验器材管家</div>
+                <div style="font-size: 16px;padding-top: 16px;">省心、省力、省时</div>
+                <div style="font-size: 12px;padding-top: 16px;color: #999999;">Your laboratory equipment manager:</div>
+                <div style="font-size: 12px;color: #999999;">Easy, effortless, and time-saving</div>
+                <div style="display: flex;font-size: 12px;color: #999999;">
+                    <div style="display: flex;">
+                      <img src="../../assets/img/home/phone.png" style="width: 14px;height: 14px;" alt=""> 
+                      <div style="padding-left: 8px;">13828810709</div>
+                    </div>
+                    <div style="display: flex;padding-left: 48px;">
+                      <img src="../../assets/img/home/mail.png" style="width: 14px;height: 14px;" alt=""> 
+                      <div style="padding-left: 8px;">wangshuai@zjyda.com.cn</div>
+                    </div>
+              </div>
+          </div>
+                
+        </div>
     </div>
-    <div style="color: #333333;display: flex;justify-content: center;padding-top: 48px;">
-      <div>
-        <div style="font-size: 24px;">您的实验器材管家</div>
-            <div style="font-size: 16px;padding-top: 16px;">省心、省力、省时</div>
-            <div style="font-size: 12px;padding-top: 16px;color: #999999;">Your laboratory equipment manager:</div>
-            <div style="font-size: 12px;color: #999999;">Easy, effortless, and time-saving</div>
-            <div style="padding-top: 40px;display: flex;font-size: 12px;color: #999999;">
-                <div style="display: flex;">
-                   <img src="../../assets/img/home/phone.png" style="width: 14px;height: 14px;" alt=""> 
-                   <div style="padding-left: 8px;">13828810709</div>
+   
+    <div style="">
+        <van-tabs v-model="activetab" background="#ffffff" color="#358dcf" title-active-color="#358dcf">
+          <van-tab title="生产产品">
+             
+              <div class="image-box" style="display: flex;justify-content: center;gap: 18px; flex-wrap: wrap;background-color:rgba(255, 255, 255);padding-top: 18px;">
+                <div class="image-scroll" v-for="(item , index ) in homeGoodList" :key="index" style="width: 180px;">
+                    <img :src="item.imgUrl" style="width: 180px;">
+                    <div style="width: 180px;height: 30px;display: flex;justify-content: center;align-items: center;font-size: 14px;color: #333333;">
+                          <div>{{ item.name }}</div>
+                    </div>
                 </div>
-                <div style="display: flex;padding-left: 48px;">
-                  <img src="../../assets/img/home/mail.png" style="width: 14px;height: 14px;" alt=""> 
-                  <div style="padding-left: 8px;">wangshuai@zjyda.com.cn</div>
-                </div>
-           </div>
-      </div>
-            
-    </div>
-    <div style="padding-top: 24px;">
-        <van-tabs v-model="activetab" background="transparent" color="#358dcf" title-active-color="#358dcf">
+            </div>
+      
+          </van-tab>
           <van-tab title="品牌介绍">
-            <div style="background-color:rgba(255, 255, 255, 0.5);padding: 18px;color: #333333;">
+            <div style="background-color:rgba(255, 255, 255);padding: 18px;color: #333333;">
               <div>我公司是一家集研发、制造、销售为一体的实验室仪器及耗材生产厂商，产品包括:气体采样袋、采样管、采样瓶、滤筒滤膜、针式滤器、玻璃器皿、防护用品、标准品试剂设备配件、色谱耗材、前处理耗材等:提供高品质、短交期、高性价比的一站式服务。</div>
             <div style="padding-top: 18px;">
               <div>
@@ -69,7 +84,7 @@
           </van-tab>
           <van-tab title="电商销售渠道">
 
-            <div style="width: 100%;height: 390px; display: flex;justify-content: space-between;align-items: center;padding: 40px;background-color:rgba(255, 255, 255, 0.5);">
+            <div style="width: 100%;height: 200px; display: flex;justify-content: space-between;align-items: center;padding: 40px;background-color:rgba(255, 255, 255);">
                 <div class="logsItem" v-for="(item, index) in logos" :key="index" >
                     <img  :src="item.logo" @click="goStore(item.path)" style="width: 40px;height: 40px;">
                     <div class="logsTitle" style="width: 100%;height: 30px;display: flex;justify-content: center;align-items: center;">
@@ -82,7 +97,7 @@
             </div>
           </van-tab>
           <van-tab title="商品售后保证">
-              <div style="padding: 16px;background-color:rgba(255, 255, 255, 0.5);height: 390px;">
+              <div style="padding: 16px;background-color:rgba(255, 255, 255);height: 390px;">
                     <div>
                       <div style="font-size: 12px;color: #333333;">
                         符合以下条件，可以要求换货
@@ -137,33 +152,39 @@
         </van-tabs>
     </div>
     <div id="whyChooseUs" >
-      <div class="container">
-        <div class="whyChooseUs-title text-center">
+      <div style="width: 100vw;display: flex;justify-content: center;align-items: center;">
+        <div>
           <p style="font-size: 30px;color:#333333;">我们的优势</p>
+        </div>
+      </div>
+       <div style="width: 100vw;display: flex;justify-content: center;align-items: center;">
+        <div>
           <p style="font-size: 16px;color: #999999;">Our advantages</p>
         </div>
       </div>
-      <div style="width: 100%;height: 200px;display: flex;justify-content: space-between;padding: 12px;">
-          <div v-for="(item,index) in serverList" :key="index" style="width: 100px;height: 100px;border: 1px solid #999999;"  class="serveList" @click="go(item.path,index)">
-            <div style="width: 100px;padding-top: 18px;display: flex;justify-content: center;">
+      <div style="width: 100%;height: 200px;display: flex;justify-content: space-between;padding: 10px;">
+          <div v-for="(item,index) in serverList" :key="index" style="width:22vw;height: 100px;border: 1px solid #999999;"  class="serveList" @click="go(item.path,index)">
+            <div style="width: 22vw;padding-top: 18px;display: flex;justify-content: center;">
                
                  <img :src="item.logo" style="width: 24px;height: 24px;">
             </div>
-            <div class="serveTitle" style="width: 100px;padding-top: 12px;display: flex;justify-content: center;font-size: 14px;">
+            <div class="serveTitle" style="width: 22vw;padding-top: 12px;display: flex;justify-content: center;font-size: 14px;">
                 <div>{{ item.title }}</div>
             </div>
           </div>
       </div>
     </div>
-    <div style="width: 100%;height: 24px; display: flex;justify-content: center;font-size: 12px;color: #666666;padding-top: 12px;padding-bottom: 6px;">备案号:粤ICP备2023015710号</div>
+    <div style="width: 100%;height: 48px; display: flex;justify-content: center;font-size: 12px;color: #666666;padding-top: 12px;padding-bottom: 6px;">备案号:粤ICP备2023015710号</div>
   </div>
 </template>
 <script>
+import { homeGoodList } from '../../utils/goodsList';
 export default {
 
   data() {
     return {
-      activetab:1,
+      activetab:0,
+      homeGoodList,
       logos:[{
         title:'天猫',
         logo:require('@/assets/img/home/tm.png'),
@@ -252,17 +273,25 @@ export default {
 <style scoped>
 .homepage_m{
   width: 100%;
-  height: 100%;
+  background-color: rgb(206, 229, 243);
   
-  background: url(../../assets/img/home/bg1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center
 }
+.infoGx{
+
+  background: url('../../assets/img/home/bg222.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  width: 100%;
+  height: 424px;
+  padding: 8px 0;
+} 
 /* 为什么选择我们 */
 #whyChooseUs {
   background-color:#f3f3f3 ;
   padding-top: 20px;
+
 }
 .product{
   width: 200px;
@@ -303,4 +332,17 @@ export default {
 .logsItem:hover{
   color: #358dcf;
 }
+.image-box {
+  width: 100%;
+  height: 390px;          /* 设定一个固定显示高度 */
+  overflow-y: auto;       /* 超出部分允许上下滚动 */
+  -webkit-overflow-scrolling: touch; /* iOS 惯性滚动 */
+  border-radius: 8px;     /* 可选，美化 */
+}
+
+.image-scroll {
+  width: 100%;            /* 宽度撑满容器 */
+  display: block;
+}
+
 </style>

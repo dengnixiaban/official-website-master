@@ -37,11 +37,11 @@ export default {
     adjustZoomForLaptop() {
         const screenWidth = window.screen.width;
         const screenHeight = window.screen.height;
-
+        
         // 粗略判断：屏幕尺寸小于等于 15.6 寸（常见笔记本分辨率）
         const isLaptop = (screenWidth < 1920 && screenHeight < 1080);
 
-        if (isLaptop) {
+        if (isLaptop&&!isMob) {
           document.body.style.zoom = '80%'; // 页面缩放
         }
     }
@@ -64,9 +64,10 @@ body {
   height: 100%;
 }
 .contentm {
-  width: 100%;
-  height: calc(100% - 84px);
+  width: 100vw;
+  height: calc(100% - 48px);
   overflow-y: auto;
+
 }
 
 </style>

@@ -221,7 +221,7 @@
                 </div>
               </div>
               <div style="width: 1300px;height: 900px; display: flex; flex-wrap: wrap;padding-left: 100px;overflow: auto;align-content: flex-start;gap: 18px;">
-                    <div class="productItem" v-for="(item , index ) in goodsList[typeSelected].goods" :key="index" style="width: 205px;height: 265px;margin-bottom: 20px;margin-left: 20px;">
+                    <div class="productItem" v-for="(item , index ) in homeList[typeSelected].goods" :key="index" style="width: 205px;height: 265px;margin-bottom: 20px;margin-left: 20px;">
                         <img @click="goDetails(item)" :src="item.imgMain" style="width: 205px;height: 205px;">
                         <div style="width: 205px;height: 60px;display: flex;justify-content: center;align-items: center;font-size: 16px;color: #999999;">
                               <div>{{ item.name }}</div>
@@ -235,7 +235,7 @@
   </div>
 </template>
 <script>
-import { goodsList } from '../utils/goodsList';
+import { goodsList,homeList } from '../utils/goodsList';
 export default {
   name: "HomePage",
   data() {
@@ -307,7 +307,8 @@ export default {
       productTypes:['气体采样袋','气体采样管','滤膜滤筒','水质采样','土壤采样','低浓度颗粒物采样','仪器配件'],
       typeSelected:0,
       serveType:9,
-      goodsList
+      goodsList,
+      homeList
       
     };
   },
