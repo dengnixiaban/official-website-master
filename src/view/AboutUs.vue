@@ -17,7 +17,7 @@
                     <div class="abouts_title">
                         防护用品、标准品试剂、设备配件、色耗材、前处理耗材等;提供高品质、短交期、高性价比的一站式服务。
                     </div>
-                    <div class="abouts_title">
+                    <div class="abouts_title"> 
                         1.自主研发与品质控制
                     </div>
                     <div class="abouts_text">
